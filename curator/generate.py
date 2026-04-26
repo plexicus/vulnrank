@@ -43,15 +43,27 @@ def _chat(client: OpenAI, messages: list[dict], retry_count: int = 0) -> str:
             resp = client.chat.completions.create(
                 model=MODEL,
                 messages=messages,
-                response_format={"type": "json_object"},
                 temperature=0.1,
+                # response_format not used — MiniMax doesn't support json_object mode.
+                # JSON output is enforced via the system prompt instruction.
             )
-            return resp.choices[0].message.content or "{}"
+            return _extract_json_text(resp.choices[0].message.content or "{}")
         except Exception as e:
             logger.warning("LLM call attempt %d failed: %s", attempt + 1, e)
             if attempt >= MAX_RETRIES:
                 raise
     return "{}"
+
+
+def _extract_json_text(text: str) -> str:
+    """Strip markdown code fences the model may wrap around JSON."""
+    text = text.strip()
+    if text.startswith("```"):
+        lines = text.splitlines()
+        # Drop first line (```json or ```) and last line (```)
+        inner = lines[1:-1] if lines[-1].strip() == "```" else lines[1:]
+        text = "\n".join(inner).strip()
+    return text
 
 
 def _parse_json(text: str, fallback: dict | None = None) -> dict:
