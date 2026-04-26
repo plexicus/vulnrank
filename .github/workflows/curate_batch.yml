@@ -23,7 +23,7 @@ permissions:
   contents: write
   id-token: write
 
-environment: curation
+# environment: curation  # Uncomment to require maintainer approval before each run
 
 jobs:
   curate:
