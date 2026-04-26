@@ -1,0 +1,107 @@
+name: Curate Single CVE
+
+on:
+  workflow_dispatch:
+    inputs:
+      cve_id:
+        description: "CVE ID to curate (e.g. CVE-2021-44228)"
+        required: true
+      ecosystem:
+        description: "Ecosystem (npm/pypi/go/maven/cargo/nuget/rubygems)"
+        required: true
+      package:
+        description: "Package name (Maven: groupId:artifactId)"
+        required: true
+      vuln_version:
+        description: "Vulnerable version tag (optional)"
+        required: false
+      fix_version:
+        description: "Fixed version tag (optional)"
+        required: false
+      github_repo:
+        description: "GitHub repo owner/repo (optional)"
+        required: false
+      force:
+        description: "Re-curate even if already curated"
+        required: false
+        default: "false"
+        type: boolean
+
+concurrency:
+  group: curation-pipeline
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  id-token: write
+
+environment: curation
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+
+      - name: Curate CVE
+        env:
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          MINIMAX_SYSTEM_PROMPT: ${{ secrets.MINIMAX_SYSTEM_PROMPT }}
+          HETZNER_S3_KEY: ${{ secrets.HETZNER_S3_KEY }}
+          HETZNER_S3_SECRET: ${{ secrets.HETZNER_S3_SECRET }}
+          HETZNER_S3_ENDPOINT: ${{ secrets.HETZNER_S3_ENDPOINT }}
+          HETZNER_S3_BUCKET: ${{ secrets.HETZNER_S3_BUCKET }}
+          GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'EOF'
+          import os, sys, json
+          from curator.storage.index import MasterIndex
+          from curator.mark_curated import curate_one, save_public_status
+
+          master = MasterIndex()
+          master.load()
+
+          result = curate_one(
+              cve_id="${{ inputs.cve_id }}",
+              ecosystem="${{ inputs.ecosystem }}",
+              package="${{ inputs.package }}",
+              vuln_version="${{ inputs.vuln_version }}" or None,
+              fix_version="${{ inputs.fix_version }}" or None,
+              github_repo="${{ inputs.github_repo }}" or None,
+              master_index=master,
+              force="${{ inputs.force }}" == "true",
+          )
+
+          print(json.dumps(result, indent=2))
+          master.save()
+          save_public_status(master)
+
+          if result["status"] == "failed":
+              print(f"Curation failed: {result['error']}", file=sys.stderr)
+              sys.exit(1)
+          EOF
+
+      - name: Commit public curation status
+        run: |
+          git config user.name "vulnrank-bot"
+          git config user.email "bot@plexicus.ai"
+          git add data/curation_status/
+          git diff --staged --quiet || git commit -m "chore: curate ${{ inputs.cve_id }} (${{ inputs.ecosystem }}/${{ inputs.package }})"
+          git push

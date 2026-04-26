@@ -1,0 +1,73 @@
+name: Weekly Vulnerability Ranking
+
+on:
+  schedule:
+    - cron: "0 2 * * 1"   # Monday 02:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rank:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch deps.dev signals
+        run: python -c "
+from collectors.deps_dev import fetch_all
+import json, os
+data = fetch_all()
+os.makedirs('data/raw/deps_dev', exist_ok=True)
+for eco, entries in data.items():
+    with open(f'data/raw/deps_dev/{eco}.json', 'w') as f:
+        json.dump(entries, f)
+print('deps.dev fetch complete')
+"
+
+      - name: Enrich with OSV advisories
+        run: python -c "
+from collectors.osv_advisories import enrich_packages
+from collectors.cisa_kev import load_cve_set
+from collectors.epss import load_epss_map
+from ranker.scorer import score_ecosystem, save_rankings, save_global, build_global_top500, _load_weights
+import json, os, glob
+
+weights = _load_weights()
+kev_set = load_cve_set()
+epss_map = load_epss_map()
+
+ecosystem_data = {}
+for path in glob.glob('data/raw/deps_dev/*.json'):
+    eco = os.path.splitext(os.path.basename(path))[0]
+    with open(path) as f:
+        packages = json.load(f)
+    enriched = enrich_packages(packages)
+    scored = score_ecosystem(enriched, kev_set, epss_map, weights)
+    ecosystem_data[eco] = scored
+
+save_rankings(ecosystem_data)
+save_global(build_global_top500(ecosystem_data))
+print('Ranking complete')
+"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit rankings
+        run: |
+          git config user.name "vulnrank-bot"
+          git config user.email "bot@plexicus.ai"
+          git add data/rankings/ data/combined/
+          git diff --staged --quiet || git commit -m "chore: weekly ranking update $(date -u +%Y-%m-%d)"
+          git push

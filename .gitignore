@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+*.env
+
+# Ephemeral workflow data — never commit raw API responses
+data/raw/
+
+# Local test outputs
+data/rankings/*.json.bak
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OMC session state (not project artifacts)
+.omc/state/
+.omc/sessions/
+
+# OS
+.DS_Store

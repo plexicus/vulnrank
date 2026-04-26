@@ -1,0 +1,20 @@
+# Composite score weights — community-editable via PR with data-backed justification.
+# Formula: composite = w_deps*score_deps_dev + w_github*score_github + w_threat*score_threat
+# All weights must sum to 1.0.
+weights:
+  deps_dev: 0.50
+  github: 0.30
+  threat: 0.20
+
+# Threat sub-score weights (must sum to 1.0)
+threat_weights:
+  kev_bonus: 0.40      # flat bonus if library has any CVE in CISA KEV
+  max_epss: 0.40       # max EPSS score across all associated CVEs
+  cve_count_log: 0.20  # log-normalised CVE count (max reference = 20)
+
+# Priority thresholds
+priority:
+  critical_epss_min: 0.50   # EPSS >= this → critical (if also in KEV)
+  high_composite_min: 0.70
+  high_cve_count_min: 5
+  medium_composite_min: 0.40

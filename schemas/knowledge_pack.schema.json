@@ -1,0 +1,176 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "KnowledgePack",
+  "type": "object",
+  "required": ["layer1", "layer2", "layer3", "layer4", "layer5", "layer6", "layer7"],
+  "properties": {
+    "layer1": {
+      "type": "object",
+      "required": ["cve_id", "affected_ecosystem", "affected_package", "purl", "summary"],
+      "properties": {
+        "cve_id":             { "type": "string", "pattern": "^CVE-\\d{4}-\\d{4,}$" },
+        "ghsa_id":            { "type": ["string", "null"] },
+        "aliases":            { "type": "array", "items": { "type": "string" } },
+        "affected_ecosystem": { "type": "string" },
+        "affected_package":   { "type": "string" },
+        "purl":               { "type": "string", "pattern": "^pkg:" },
+        "summary":            { "type": "string", "minLength": 10 }
+      }
+    },
+    "layer2": {
+      "type": "object",
+      "required": ["vulnerable_versions", "fixed_version", "affected_ranges"],
+      "properties": {
+        "vulnerable_versions": { "type": "array", "items": { "type": "string" } },
+        "fixed_version":       { "type": ["string", "null"] },
+        "affected_ranges":     { "type": "array", "items": { "type": "string" } },
+        "fix_commit_sha":      { "type": ["string", "null"] },
+        "vuln_tag":            { "type": ["string", "null"] },
+        "fix_tag":             { "type": ["string", "null"] }
+      }
+    },
+    "layer3": {
+      "type": "object",
+      "required": ["vulnerable_symbols"],
+      "properties": {
+        "vulnerable_symbols": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "kind", "confidence", "reasoning"],
+            "properties": {
+              "name":          { "type": "string" },
+              "kind":          { "type": "string", "enum": ["function", "method", "class", "variable", "module"] },
+              "class":         { "type": ["string", "null"] },
+              "signature":     { "type": ["string", "null"] },
+              "file_path":     { "type": ["string", "null"] },
+              "confidence":    { "type": "string", "enum": ["high", "medium", "low"] },
+              "reasoning":     { "type": "string", "minLength": 5 },
+              "diff_evidence": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "vulnerable_symbol_callers": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "fix_type":           { "type": ["string", "null"] },
+        "typical_fix_effort": {
+          "type": ["object", "null"],
+          "properties": {
+            "level":          { "type": "string", "enum": ["version_bump", "config_change", "code_change", "complex_refactor", "unknown"] },
+            "description":    { "type": ["string", "null"] },
+            "diff_evidence":  { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "layer4": {
+      "type": "object",
+      "required": ["requires_user_input", "requires_authentication", "requires_network_access",
+                   "attack_vector", "attack_complexity"],
+      "properties": {
+        "requires_user_input":        { "type": "boolean" },
+        "requires_authentication":    { "type": "boolean" },
+        "requires_network_access":    { "type": "boolean" },
+        "requires_specific_config":   { "type": "boolean" },
+        "requires_specific_features": { "type": "boolean" },
+        "requires_specific_dependencies": { "type": "boolean" },
+        "attack_vector":              { "type": "string", "enum": ["NETWORK", "ADJACENT", "LOCAL", "PHYSICAL", "UNKNOWN"] },
+        "attack_complexity":          { "type": "string", "enum": ["LOW", "HIGH", "UNKNOWN"] },
+        "mitigations_available":      { "type": "boolean" }
+      }
+    },
+    "layer5": {
+      "type": "object",
+      "required": ["not_affected_not_called", "not_affected_mitigated", "affected_default"],
+      "properties": {
+        "not_affected_not_called": {
+          "type": "object",
+          "required": ["justification", "impact_statement", "action_statement"],
+          "properties": {
+            "justification":    { "type": "string" },
+            "impact_statement": { "type": "string" },
+            "action_statement": { "type": "string" }
+          }
+        },
+        "not_affected_mitigated": {
+          "type": "object",
+          "required": ["justification", "impact_statement", "action_statement"],
+          "properties": {
+            "justification":    { "type": "string" },
+            "impact_statement": { "type": "string" },
+            "action_statement": { "type": "string" }
+          }
+        },
+        "affected_default": {
+          "type": "object",
+          "required": ["justification", "impact_statement", "action_statement"],
+          "properties": {
+            "justification":    { "type": "string" },
+            "impact_statement": { "type": "string" },
+            "action_statement": { "type": "string" }
+          }
+        }
+      }
+    },
+    "layer6": {
+      "type": "object",
+      "properties": {
+        "import_patterns": { "type": "array", "items": { "type": "string" } },
+        "call_patterns":   { "type": "array", "items": { "type": "string" } },
+        "config_patterns": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "layer7": {
+      "type": "object",
+      "required": ["curated_by", "curated_at", "prompt_version", "model_version",
+                   "confidence_overall", "human_reviewed", "source_diff_available",
+                   "sources", "schema_version"],
+      "properties": {
+        "curated_by":          { "type": "string" },
+        "curated_at":          { "type": "string", "format": "date-time" },
+        "prompt_version":      { "type": "string" },
+        "model_version":       { "type": "string" },
+        "confidence_overall":  { "type": "string", "enum": ["high", "medium", "low"] },
+        "confidence_reasoning":{ "type": ["string", "null"] },
+        "human_reviewed":      { "type": "boolean" },
+        "review_notes":        { "type": ["string", "null"] },
+        "source_diff_available": { "type": "boolean" },
+        "sources":             { "type": "array", "items": { "type": "string" } },
+        "last_validated_at":   { "type": ["string", "null"], "format": "date-time" },
+        "schema_version":      { "type": "string" }
+      }
+    },
+    "layer8": {
+      "type": "object",
+      "properties": {
+        "version_distribution": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "version":           { "type": "string" },
+              "dependent_count":   { "type": "integer" },
+              "pct_of_total":      { "type": "number" },
+              "is_vulnerable":     { "type": "boolean" },
+              "pct_still_vulnerable": { "type": "number" }
+            }
+          }
+        },
+        "affected_base_images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "image":               { "type": "string" },
+              "includes_vulnerable": { "type": "boolean" },
+              "version_shipped":     { "type": ["string", "null"] }
+            }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

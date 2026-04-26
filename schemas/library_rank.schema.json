@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LibraryRankEntry",
+  "type": "object",
+  "required": ["name", "ecosystem", "purl", "default_version", "scores", "threat", "curation"],
+  "properties": {
+    "name": { "type": "string" },
+    "ecosystem": { "type": "string", "enum": ["npm", "pypi", "go", "maven", "cargo", "nuget", "rubygems"] },
+    "purl": { "type": "string", "pattern": "^pkg:" },
+    "default_version": { "type": "string" },
+    "github_repo": { "type": ["string", "null"] },
+    "signals": {
+      "type": "object",
+      "properties": {
+        "deps_dev_dependent_count": { "type": "integer", "minimum": 0 },
+        "github_stars": { "type": ["integer", "null"], "minimum": 0 },
+        "github_forks": { "type": ["integer", "null"], "minimum": 0 }
+      }
+    },
+    "scores": {
+      "type": "object",
+      "required": ["score_deps_dev", "score_github", "score_threat", "composite_score"],
+      "properties": {
+        "score_deps_dev":   { "type": "number", "minimum": 0, "maximum": 1 },
+        "score_github":     { "type": "number", "minimum": 0, "maximum": 1 },
+        "score_threat":     { "type": "number", "minimum": 0, "maximum": 1 },
+        "composite_score":  { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "threat": {
+      "type": "object",
+      "properties": {
+        "associated_cves":  { "type": "array", "items": { "type": "string" } },
+        "max_cvss":         { "type": ["number", "null"], "minimum": 0, "maximum": 10 },
+        "in_cisa_kev":      { "type": "boolean" },
+        "max_epss":         { "type": ["number", "null"], "minimum": 0, "maximum": 1 }
+      }
+    },
+    "curation": {
+      "type": "object",
+      "properties": {
+        "priority":     { "type": "string", "enum": ["critical", "high", "medium", "low"] },
+        "status":       { "type": "string", "enum": ["pending", "curating", "curated", "failed", "skipped"] },
+        "coverage_pct": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    }
+  },
+  "additionalProperties": false
+}

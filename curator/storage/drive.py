@@ -1,0 +1,113 @@
+"""Google Drive backup storage for knowledge packs."""
+
+import json
+import logging
+import os
+from typing import Any
+from io import BytesIO
+
+logger = logging.getLogger(__name__)
+
+
+def _service():
+    """Build Google Drive API service using Application Default Credentials."""
+    from google.oauth2 import service_account
+    from googleapiclient.discovery import build
+
+    sa_json = os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON")
+    if sa_json:
+        import json as _json
+        info = _json.loads(sa_json)
+        creds = service_account.Credentials.from_service_account_info(
+            info, scopes=["https://www.googleapis.com/auth/drive"]
+        )
+    else:
+        from google.auth import default
+        creds, _ = default(scopes=["https://www.googleapis.com/auth/drive"])
+
+    return build("drive", "v3", credentials=creds, cache_discovery=False)
+
+
+def _root_folder() -> str:
+    return os.environ["GDRIVE_FOLDER_ID"]
+
+
+def _get_or_create_folder(service, parent_id: str, name: str) -> str:
+    """Return folder ID, creating it if necessary."""
+    query = (
+        f"name='{name}' and '{parent_id}' in parents "
+        f"and mimeType='application/vnd.google-apps.folder' and trashed=false"
+    )
+    results = service.files().list(q=query, fields="files(id,name)").execute()
+    files = results.get("files", [])
+    if files:
+        return files[0]["id"]
+
+    meta = {
+        "name": name,
+        "mimeType": "application/vnd.google-apps.folder",
+        "parents": [parent_id],
+    }
+    folder = service.files().create(body=meta, fields="id").execute()
+    return folder["id"]
+
+
+def upload_pack(pack: dict[str, Any], ecosystem: str, cve_id: str, package: str) -> None:
+    """Upload knowledge pack to Google Drive. Failure is non-fatal (logged as warning)."""
+    from googleapiclient.http import MediaIoBaseUpload
+
+    try:
+        service = _service()
+        root = _root_folder()
+
+        eco_folder = _get_or_create_folder(service, root, ecosystem)
+        cve_folder = _get_or_create_folder(service, eco_folder, cve_id)
+
+        # Maven: groupId/artifactId → nested folders
+        if ecosystem == "maven" and ":" in package:
+            group, artifact = package.split(":", 1)
+            group_folder = _get_or_create_folder(service, cve_folder, group)
+            parent_id = _get_or_create_folder(service, group_folder, artifact)
+            filename = "pack.json"
+        else:
+            parent_id = cve_folder
+            filename = f"{package.replace('/', '__')}.json"
+
+        body_bytes = json.dumps(pack, indent=2).encode()
+        media = MediaIoBaseUpload(BytesIO(body_bytes), mimetype="application/json")
+
+        # Check if file already exists
+        q = f"name='{filename}' and '{parent_id}' in parents and trashed=false"
+        existing = service.files().list(q=q, fields="files(id)").execute().get("files", [])
+
+        if existing:
+            service.files().update(fileId=existing[0]["id"], media_body=media).execute()
+        else:
+            meta = {"name": filename, "parents": [parent_id]}
+            service.files().create(body=meta, media_body=media, fields="id").execute()
+
+        logger.info("Drive backup uploaded: %s/%s/%s", ecosystem, cve_id, package)
+
+    except Exception as e:
+        logger.warning("Drive upload failed for %s/%s — non-fatal: %s", cve_id, package, e)
+
+
+def upload_master_index(index: dict) -> None:
+    from googleapiclient.http import MediaIoBaseUpload
+    try:
+        service = _service()
+        root = _root_folder()
+        filename = "master.json"
+        body_bytes = json.dumps(index, indent=2).encode()
+        media = MediaIoBaseUpload(BytesIO(body_bytes), mimetype="application/json")
+
+        q = f"name='{filename}' and '{root}' in parents and trashed=false"
+        existing = service.files().list(q=q, fields="files(id)").execute().get("files", [])
+        if existing:
+            service.files().update(fileId=existing[0]["id"], media_body=media).execute()
+        else:
+            meta = {"name": filename, "parents": [root]}
+            service.files().create(body=meta, media_body=media, fields="id").execute()
+        logger.info("Drive master index updated")
+    except Exception as e:
+        logger.warning("Drive master index upload failed — non-fatal: %s", e)

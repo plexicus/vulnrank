@@ -1,0 +1,16 @@
+--- a/log4j-core/src/main/java/org/apache/logging/log4j/core/lookup/JndiLookup.java
++++ b/log4j-core/src/main/java/org/apache/logging/log4j/core/lookup/JndiLookup.java
+@@ -56,10 +56,14 @@ public class JndiLookup extends AbstractLookup {
+     public String lookup(final LogEvent event, final String key) {
+         if (key == null) {
+             return null;
+         }
++        if (!JndiManager.isJndiLookupEnabled()) {
++            LOGGER.warn("JNDI lookup is not enabled");
++            return null;
++        }
+         final String[] keys = key.split(":");
+         final int length = keys.length;
+         if (length < 2) {
+             return null;
+         }

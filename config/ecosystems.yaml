@@ -1,0 +1,37 @@
+ecosystems:
+  npm:
+    deps_dev_system: NPM
+    osv_ecosystem: npm
+    purl_type: npm
+    seed_count: 300
+  pypi:
+    deps_dev_system: PYPI
+    osv_ecosystem: PyPI
+    purl_type: pypi
+    seed_count: 300
+  go:
+    deps_dev_system: GO
+    osv_ecosystem: Go
+    purl_type: golang
+    seed_count: 200
+  maven:
+    deps_dev_system: MAVEN
+    osv_ecosystem: Maven
+    purl_type: maven
+    seed_count: 200
+    key_separator: "/"   # colon in groupId:artifactId → slash in S3 keys
+  cargo:
+    deps_dev_system: CARGO
+    osv_ecosystem: crates.io
+    purl_type: cargo
+    seed_count: 150
+  nuget:
+    deps_dev_system: NUGET
+    osv_ecosystem: NuGet
+    purl_type: nuget
+    seed_count: 150
+  rubygems:
+    deps_dev_system: RUBYGEMS
+    osv_ecosystem: RubyGems
+    purl_type: gem
+    seed_count: 150
