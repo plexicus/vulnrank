@@ -28,10 +28,9 @@ permissions:
   contents: read
   id-token: write
 
-# environment: curation  # Uncomment to require maintainer approval before each run
-
 jobs:
   curate:
+    environment: curation
     runs-on: ubuntu-latest
     timeout-minutes: 350
 
