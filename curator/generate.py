@@ -1,24 +1,20 @@
-"""5-step LLM prompt chain using MiniMax M2.5 (OpenAI-compatible)."""
+"""5-step LLM prompt chain via LiteLLM + DeepInfra (google/gemma-4-26B-A4B-it)."""
 
 import json
 import logging
 import os
 from typing import Any
 from datetime import datetime, timezone
-from openai import OpenAI
+
+import litellm
+
+litellm.drop_params = True  # silently drop params unsupported by the provider
 
 logger = logging.getLogger(__name__)
 
 PROMPT_VERSION = "1.0.0"
-MODEL = "google/gemma-4-26B-it"
+MODEL = "deepinfra/google/gemma-4-26B-A4B-it"
 MAX_RETRIES = 2
-
-
-def _client() -> OpenAI:
-    return OpenAI(
-        api_key=os.environ["DEEPINFRA_API_KEY"],
-        base_url="https://api.deepinfra.com/v1/openai",
-    )
 
 
 def _system_prompt() -> str:
@@ -34,15 +30,14 @@ def _system_prompt() -> str:
     )
 
 
-def _chat(client: OpenAI, messages: list[dict], retry_count: int = 0) -> str:
+def _chat(messages: list[dict]) -> str:
     for attempt in range(MAX_RETRIES + 1):
         try:
-            resp = client.chat.completions.create(
+            resp = litellm.completion(
                 model=MODEL,
                 messages=messages,
                 temperature=0.1,
-                # response_format not used — MiniMax doesn't support json_object mode.
-                # JSON output is enforced via the system prompt instruction.
+                api_key=os.environ["DEEPINFRA_API_KEY"],
             )
             return _extract_json_text(resp.choices[0].message.content or "{}")
         except Exception as e:
@@ -57,7 +52,6 @@ def _extract_json_text(text: str) -> str:
     text = text.strip()
     if text.startswith("```"):
         lines = text.splitlines()
-        # Drop first line (```json or ```) and last line (```)
         inner = lines[1:-1] if lines[-1].strip() == "```" else lines[1:]
         text = "\n".join(inner).strip()
     return text
@@ -78,7 +72,6 @@ def run_chain(payload: dict[str, Any]) -> tuple[dict[str, Any], int]:
     Execute the 5-step prompt chain.
     Returns (raw_llm_output, retry_count).
     """
-    client = _client()
     prefill = payload["prefill"]
     adv = payload["advisory_text"]
     diff = payload["diff_text"]
@@ -113,7 +106,7 @@ Diff available: {diff_available}
         "affected_ranges (array of range strings).\n"
         "Use ONLY the advisory text above."
     )
-    step1_raw = _chat(client, [
+    step1_raw = _chat([
         {"role": "system", "content": _system_prompt()},
         {"role": "user", "content": step1_prompt},
     ])
@@ -126,7 +119,7 @@ Diff available: {diff_available}
             "Analyze the diff above. Return JSON with: changed_files (array of filenames), "
             "key_changes (array of short descriptions of what changed and why it matters for security)."
         )
-        step2_raw = _chat(client, [
+        step2_raw = _chat([
             {"role": "system", "content": _system_prompt()},
             {"role": "user", "content": step2_prompt},
         ])
@@ -145,7 +138,7 @@ Diff available: {diff_available}
         "RULE: If no diff is available, ALL symbols must have confidence='low' and diff_evidence=null.\n"
         "RULE: You MUST provide diff_evidence for any high or medium confidence symbol."
     )
-    step3_raw = _chat(client, [
+    step3_raw = _chat([
         {"role": "system", "content": _system_prompt()},
         {"role": "user", "content": step3_prompt},
     ])
@@ -170,7 +163,7 @@ Diff available: {diff_available}
             "Return the COMPLETE corrected vulnerable_symbols array as JSON: "
             '{"vulnerable_symbols": [...]}'
         )
-        fix_raw = _chat(client, [
+        fix_raw = _chat([
             {"role": "system", "content": _system_prompt()},
             {"role": "user", "content": fix_prompt},
         ])
@@ -186,7 +179,7 @@ Diff available: {diff_available}
         "requires_specific_dependencies, mitigations_available.\n"
         "Base your answers ONLY on the advisory and diff above."
     )
-    step4_raw = _chat(client, [
+    step4_raw = _chat([
         {"role": "system", "content": _system_prompt()},
         {"role": "user", "content": step4_prompt},
     ])
@@ -216,7 +209,7 @@ Diff available: {diff_available}
         "- confidence_reasoning: one sentence.\n"
         "Use ONLY evidence from the provided context. Do NOT invent data."
     )
-    step5_raw = _chat(client, [
+    step5_raw = _chat([
         {"role": "system", "content": _system_prompt()},
         {"role": "user", "content": step5_prompt},
     ])
