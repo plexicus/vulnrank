@@ -2,7 +2,7 @@ name: Batch CVE Curation
 
 on:
   schedule:
-    - cron: "0 4 * * 1"   # Monday 04:00 UTC (after weekly_ranking)
+    - cron: "0 4 * * 1"
   workflow_dispatch:
     inputs:
       max_cves:
@@ -21,7 +21,7 @@ concurrency:
 
 permissions:
   contents: write
-  id-token: write    # for Workload Identity Federation
+  id-token: write
 
 environment: curation
 
@@ -48,7 +48,10 @@ jobs:
           service_account: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
 
       - name: Run batch curation
+        run: python scripts/run_batch_curation.py
         env:
+          MAX_CVES: ${{ inputs.max_cves || '50' }}
+          FORCE: ${{ inputs.force || 'false' }}
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
           MINIMAX_SYSTEM_PROMPT: ${{ secrets.MINIMAX_SYSTEM_PROMPT }}
           HETZNER_S3_KEY: ${{ secrets.HETZNER_S3_KEY }}
@@ -58,79 +61,6 @@ jobs:
           GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NVDAPIKEY: ${{ secrets.NVDAPIKEY }}
-        run: |
-          python - <<'EOF'
-          import json, glob, os, sys
-          from curator.storage.index import MasterIndex
-          from curator.mark_curated import curate_one, save_public_status
-          from collectors.cisa_kev import load_cve_set
-          from collectors.epss import load_epss_map
-
-          MAX_CVES = int(os.environ.get("MAX_CVES", "${{ inputs.max_cves || '50' }}"))
-          FORCE = os.environ.get("FORCE", "${{ inputs.force || 'false' }}").lower() == "true"
-
-          # Load master index
-          master = MasterIndex()
-          master.load()
-
-          kev_set = load_cve_set()
-          epss_map = load_epss_map()
-
-          # Collect candidates: critical/high priority CVEs not yet curated
-          candidates = []
-          for path in glob.glob("data/rankings/*.json"):
-              with open(path) as f:
-                  entries = json.load(f)
-              for entry in entries:
-                  priority = entry.get("curation", {}).get("priority", "low")
-                  if priority not in ("critical", "high"):
-                      continue
-                  eco = entry["ecosystem"]
-                  pkg = entry["name"]
-                  repo = entry.get("github_repo")
-                  default_ver = entry.get("default_version")
-                  for cve_id in entry.get("threat", {}).get("associated_cves", []):
-                      decision = master.decide(cve_id, eco, pkg, force=FORCE)
-                      if decision in ("process", "retry", "reprocess"):
-                          epss_score = epss_map.get(cve_id, 0.0)
-                          in_kev = cve_id in kev_set
-                          candidates.append({
-                              "cve_id": cve_id, "ecosystem": eco, "package": pkg,
-                              "github_repo": repo, "default_version": default_ver,
-                              "epss": epss_score, "in_kev": in_kev,
-                          })
-
-          # Sort: KEV first, then EPSS descending
-          candidates.sort(key=lambda x: (not x["in_kev"], -x["epss"]))
-          candidates = candidates[:MAX_CVES]
-          print(f"Curating {len(candidates)} CVEs")
-
-          results = {"curated": 0, "skipped": 0, "failed": 0}
-          for c in candidates:
-              r = curate_one(
-                  cve_id=c["cve_id"],
-                  ecosystem=c["ecosystem"],
-                  package=c["package"],
-                  vuln_version=None,
-                  fix_version=None,
-                  github_repo=c.get("github_repo"),
-                  master_index=master,
-                  force=FORCE,
-              )
-              results[r["status"] if r["status"] in results else "failed"] += 1
-
-          print(f"Results: {results}")
-
-          # Save master index (S3 + Drive)
-          master.save()
-
-          # Update public status
-          save_public_status(master)
-
-          if results["failed"] > len(candidates) * 0.1:
-              print(f"ERROR: failure rate exceeds 10%", file=sys.stderr)
-              sys.exit(1)
-          EOF
 
       - name: Commit public curation status
         run: |
