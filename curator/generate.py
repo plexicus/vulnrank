@@ -13,7 +13,7 @@ litellm.drop_params = True  # silently drop params unsupported by the provider
 logger = logging.getLogger(__name__)
 
 PROMPT_VERSION = "1.0.0"
-MODEL = "deepinfra/google/gemma-4-26B-A4B-it"
+MODEL = "deepinfra/deepseek-ai/DeepSeek-V4-Flash"
 MAX_RETRIES = 2
 
 
