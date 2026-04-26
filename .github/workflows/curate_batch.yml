@@ -54,13 +54,11 @@ jobs:
         with:
           workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
           service_account: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
-          token_format: access_token
-          scopes: https://www.googleapis.com/auth/drive
 
       - name: Run batch curation
         run: python scripts/run_batch_curation.py
         env:
-          GOOGLE_AUTH_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           MAX_CVES: ${{ inputs.max_cves || '100' }}
           FORCE: ${{ inputs.force || 'false' }}
           # Thursday schedule flips to legacy-heavy mode automatically.
