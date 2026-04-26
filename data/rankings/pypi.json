@@ -1,1 +1,2595 @@
-[]
+[
+  {
+    "name": "pillow",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/pillow",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 1.0,
+      "composite_score": 0.2
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2021-25287",
+        "CVE-2014-3589",
+        "CVE-2021-27922",
+        "CVE-2023-50447",
+        "CVE-2020-35654",
+        "CVE-2026-25990",
+        "CVE-2022-22815",
+        "CVE-2021-28675",
+        "CVE-2021-34552",
+        "CVE-2016-0775",
+        "CVE-2021-27921",
+        "CVE-2022-30595",
+        "CVE-2019-19911",
+        "CVE-2021-25289",
+        "CVE-2023-5129",
+        "CVE-2021-28676",
+        "CVE-2016-0740",
+        "CVE-2022-45199",
+        "CVE-2021-25290",
+        "CVE-2016-4009"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": true,
+      "max_epss": 0.94083
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "django",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/django",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.700493,
+      "composite_score": 0.140099
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2026-33033",
+        "CVE-2022-36359",
+        "CVE-2024-41991",
+        "CVE-2021-45116",
+        "CVE-2019-12781",
+        "CVE-2009-3695",
+        "CVE-2023-24580",
+        "CVE-2015-3982",
+        "CVE-2014-0481",
+        "CVE-2014-0474",
+        "CVE-2021-31542",
+        "CVE-2019-14234",
+        "CVE-2013-1665",
+        "CVE-2026-33034",
+        "CVE-2012-3444",
+        "CVE-2008-3909",
+        "CVE-2021-45452",
+        "CVE-2013-1664",
+        "CVE-2010-4535",
+        "CVE-2026-1285"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.92834
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "aiohttp",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/aiohttp",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.60362,
+      "composite_score": 0.120724
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2024-52304",
+        "CVE-2025-69227",
+        "CVE-2026-22815",
+        "CVE-2025-69223",
+        "CVE-2025-69230",
+        "CVE-2021-21330",
+        "CVE-2023-49082",
+        "CVE-2024-23829",
+        "CVE-2023-37276",
+        "CVE-2025-69225",
+        "CVE-2025-69224",
+        "CVE-2026-34519",
+        "CVE-2026-34515",
+        "CVE-2025-53643",
+        "CVE-2023-47627",
+        "CVE-2023-49081",
+        "CVE-2026-34517",
+        "CVE-2026-34516",
+        "CVE-2024-42367",
+        "CVE-2025-69226"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.93482
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "werkzeug",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/werkzeug",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.538133,
+      "composite_score": 0.107627
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2026-21860",
+        "CVE-2024-49767",
+        "CVE-2025-66221",
+        "CVE-2026-27199",
+        "CVE-2023-23934",
+        "CVE-2024-49766",
+        "CVE-2016-10516",
+        "CVE-2023-46136",
+        "CVE-2022-29361",
+        "CVE-2024-34069",
+        "CVE-2019-14806",
+        "CVE-2020-28724",
+        "CVE-2019-14322",
+        "CVE-2023-25577"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.90059
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "cryptography",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/cryptography",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.535472,
+      "composite_score": 0.107094
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2018-10903",
+        "CVE-2023-38325",
+        "CVE-2026-39892",
+        "CVE-2020-25659",
+        "CVE-2020-36242",
+        "CVE-2016-9243",
+        "CVE-2024-26130",
+        "CVE-2023-49083",
+        "CVE-2023-50782",
+        "CVE-2024-0727",
+        "CVE-2026-26007",
+        "CVE-2023-23931",
+        "CVE-2026-34073",
+        "CVE-2024-12797",
+        "CVE-2023-0286"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.88334
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "transformers",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/transformers",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.518136,
+      "composite_score": 0.103627
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2025-6638",
+        "CVE-2025-1194",
+        "CVE-2025-3264",
+        "CVE-2024-11392",
+        "CVE-2025-3777",
+        "CVE-2025-3263",
+        "CVE-2024-12720",
+        "CVE-2023-7018",
+        "CVE-2023-6730",
+        "CVE-2025-3262",
+        "CVE-2025-5197",
+        "CVE-2025-2099",
+        "CVE-2024-11394",
+        "CVE-2023-2800",
+        "CVE-2025-6051",
+        "CVE-2024-3568",
+        "CVE-2025-6921",
+        "CVE-2024-11393",
+        "CVE-2026-1839",
+        "CVE-2025-3933"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.79534
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "numpy",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/numpy",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.430308,
+      "composite_score": 0.086062
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2021-41496",
+        "CVE-2019-6446",
+        "CVE-2021-41495",
+        "CVE-2021-33430",
+        "CVE-2014-1858",
+        "CVE-2021-34141",
+        "CVE-2017-12852",
+        "CVE-2014-1859"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.71492
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "tensorflow",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/tensorflow",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.398034,
+      "composite_score": 0.079607
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2022-41895",
+        "CVE-2022-41888",
+        "CVE-2022-35937",
+        "CVE-2021-37649",
+        "CVE-2022-36000",
+        "CVE-2022-21726",
+        "CVE-2022-23577",
+        "CVE-2021-37684",
+        "CVE-2022-29195",
+        "CVE-2021-29590",
+        "CVE-2020-15198",
+        "CVE-2022-29203",
+        "CVE-2022-35993",
+        "CVE-2022-23578",
+        "CVE-2019-16778",
+        "CVE-2021-37678",
+        "CVE-2018-21233",
+        "CVE-2022-41901",
+        "CVE-2022-23562",
+        "CVE-2023-25675"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "opencv-python",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/opencv-python",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.225585,
+      "composite_score": 0.045117
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2017-12597",
+        "CVE-2017-12863",
+        "CVE-2017-12603",
+        "CVE-2016-1516",
+        "CVE-2017-17760",
+        "CVE-2019-16249",
+        "CVE-2017-12605",
+        "CVE-2019-14492",
+        "CVE-2019-14491",
+        "CVE-2018-5268",
+        "CVE-2017-12864",
+        "CVE-2017-12600",
+        "CVE-2017-12599",
+        "CVE-2017-12604",
+        "CVE-2017-12598",
+        "CVE-2017-12606",
+        "CVE-2019-5064",
+        "CVE-2019-9423",
+        "CVE-2017-12602",
+        "CVE-2019-19624"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "langchain",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/langchain",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.2,
+      "composite_score": 0.04
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2023-34540",
+        "CVE-2023-32786",
+        "CVE-2023-36189",
+        "CVE-2023-36258",
+        "CVE-2023-36281",
+        "CVE-2023-32785",
+        "CVE-2023-29374",
+        "CVE-2024-0243",
+        "CVE-2024-8309",
+        "CVE-2023-46229",
+        "CVE-2024-3571",
+        "CVE-2023-38896",
+        "CVE-2024-2965",
+        "CVE-2023-38860",
+        "CVE-2023-36188",
+        "CVE-2023-36095",
+        "CVE-2023-39631",
+        "CVE-2024-28088",
+        "CVE-2023-39659",
+        "CVE-2023-34541"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "urllib3",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/urllib3",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.189874,
+      "composite_score": 0.037975
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2021-28363",
+        "CVE-2023-45803",
+        "CVE-2025-50182",
+        "CVE-2026-21441",
+        "CVE-2019-11324",
+        "CVE-2018-20060",
+        "CVE-2019-11236",
+        "CVE-2016-9015",
+        "CVE-2023-43804",
+        "CVE-2021-33503",
+        "CVE-2018-25091",
+        "CVE-2020-7212",
+        "CVE-2025-50181",
+        "CVE-2020-26137",
+        "CVE-2025-66471",
+        "CVE-2025-66418",
+        "CVE-2024-37891"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "pip",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/pip",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.157522,
+      "composite_score": 0.031504
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2019-20916",
+        "CVE-2013-1888",
+        "CVE-2021-3572",
+        "CVE-2014-8991",
+        "CVE-2026-1703",
+        "CVE-2013-5123",
+        "CVE-2023-5752",
+        "CVE-2025-8869",
+        "CVE-2013-1629",
+        "CVE-2026-3219"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "jinja2",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/jinja2",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.157522,
+      "composite_score": 0.031504
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2014-1402",
+        "CVE-2025-27516",
+        "CVE-2014-0012",
+        "CVE-2024-34064",
+        "CVE-2024-56326",
+        "CVE-2020-28493",
+        "CVE-2024-22195",
+        "CVE-2019-10906",
+        "CVE-2024-56201",
+        "CVE-2016-10745"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "requests",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/requests",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.14434,
+      "composite_score": 0.028868
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2014-1830",
+        "CVE-2014-1829",
+        "CVE-2018-18074",
+        "CVE-2015-2296",
+        "CVE-2024-35195",
+        "CVE-2024-47081",
+        "CVE-2026-25645",
+        "CVE-2023-32681"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "torch",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/torch",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.14434,
+      "composite_score": 0.028868
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2024-48063",
+        "CVE-2022-45907",
+        "CVE-2025-2953",
+        "CVE-2024-31584",
+        "CVE-2025-32434",
+        "CVE-2024-31580",
+        "CVE-2024-31583",
+        "CVE-2025-3730"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "scrapy",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/scrapy",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.14434,
+      "composite_score": 0.028868
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2024-3572",
+        "CVE-2021-41125",
+        "CVE-2024-1968",
+        "CVE-2022-0577",
+        "CVE-2024-3574",
+        "CVE-2024-1892",
+        "CVE-2017-14158",
+        "CVE-2025-6176"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "lxml",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/lxml",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.136602,
+      "composite_score": 0.02732
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2014-3146",
+        "CVE-2018-19787",
+        "CVE-2022-2309",
+        "CVE-2021-43818",
+        "CVE-2020-27783",
+        "CVE-2021-28957",
+        "CVE-2026-41066"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "grpcio",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/grpcio",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.12783,
+      "composite_score": 0.025566
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2023-4785",
+        "CVE-2023-33953",
+        "CVE-2023-32732",
+        "CVE-2017-8359",
+        "CVE-2023-32731",
+        "CVE-2023-1428"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "flask",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/flask",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.117704,
+      "composite_score": 0.023541
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2018-1000656",
+        "CVE-2026-27205",
+        "CVE-2019-1010083",
+        "CVE-2023-30861",
+        "CVE-2025-47278"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "paramiko",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/paramiko",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.117704,
+      "composite_score": 0.023541
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2018-1000805",
+        "CVE-2008-0299",
+        "CVE-2022-24302",
+        "CVE-2018-7750",
+        "CVE-2023-48795"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "protobuf",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/protobuf",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.117704,
+      "composite_score": 0.023541
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2026-0994",
+        "CVE-2021-22570",
+        "CVE-2025-4565",
+        "CVE-2015-5237",
+        "CVE-2022-1941"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "pyjwt",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/pyjwt",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.105727,
+      "composite_score": 0.021145
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2026-32597",
+        "CVE-2024-53861",
+        "CVE-2022-29217",
+        "CVE-2017-11424"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "setuptools",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/setuptools",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.105727,
+      "composite_score": 0.021145
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2022-40897",
+        "CVE-2013-1633",
+        "CVE-2025-47273",
+        "CVE-2024-6345"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "sqlalchemy",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/sqlalchemy",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.091068,
+      "composite_score": 0.018214
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2012-0805",
+        "CVE-2019-7548",
+        "CVE-2019-7164"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "python-jose",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/python-jose",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.091068,
+      "composite_score": 0.018214
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2016-7036",
+        "CVE-2024-33663",
+        "CVE-2024-33664"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "scikit-learn",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/scikit-learn",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.091068,
+      "composite_score": 0.018214
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2024-5206",
+        "CVE-2020-13092",
+        "CVE-2020-28975"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "certifi",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/certifi",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.091068,
+      "composite_score": 0.018214
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2022-23491",
+        "CVE-2024-39689",
+        "CVE-2023-37920"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "fastapi",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/fastapi",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2021-32677",
+        "CVE-2024-24762"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "celery",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/celery",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2011-4356",
+        "CVE-2021-23727"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "redis",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/redis",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2023-28859",
+        "CVE-2023-28858"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "pycryptodome",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/pycryptodome",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2018-15560",
+        "CVE-2023-52323"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "anthropic",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/anthropic",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2026-34452",
+        "CVE-2026-34450"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "wheel",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/wheel",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2026-24049",
+        "CVE-2022-40898"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "pydantic",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/pydantic",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2024-3772",
+        "CVE-2021-29510"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "marshmallow",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/marshmallow",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2018-17175",
+        "CVE-2025-68480"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "selenium",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/selenium",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2022-28108",
+        "CVE-2023-5590"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "sentry-sdk",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/sentry-sdk",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2024-40647",
+        "CVE-2023-28117"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "pymongo",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/pymongo",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2013-2132",
+        "CVE-2024-5629"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "pandas",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/pandas",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2020-13091"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "httpx",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/httpx",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2021-41945"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "pytest",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/pytest",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2025-71176"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "loguru",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/loguru",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2022-0338"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "asyncpg",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/asyncpg",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2020-17446"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "aiomysql",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/aiomysql",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2025-62611"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "pymysql",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/pymysql",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2024-36039"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "boto3",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/boto3",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "passlib",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/passlib",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "bcrypt",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/bcrypt",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "openai",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/openai",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "cerberus",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/cerberus",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "jsonschema",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/jsonschema",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "beautifulsoup4",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/beautifulsoup4",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "playwright",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/playwright",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "parameterized",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/parameterized",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "unittest2",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/unittest2",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "mock",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/mock",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "hypothesis",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/hypothesis",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "factory-boy",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/factory-boy",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "faker",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/faker",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "toml",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/toml",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "configparser",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/configparser",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "click",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/click",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "typer",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/typer",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "rich",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/rich",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "structlog",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/structlog",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "datadog",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/datadog",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "prometheus-client",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/prometheus-client",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "thrift",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/thrift",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "avro-python3",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/avro-python3",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "kafka-python",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/kafka-python",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "pika",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/pika",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "nats-py",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/nats-py",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "motor",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/motor",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "elasticsearch",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/elasticsearch",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "pysolr",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/pysolr",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "psycopg2",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/psycopg2",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "cx-oracle",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/cx-oracle",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  }
+]

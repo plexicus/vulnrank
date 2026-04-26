@@ -1,1 +1,2842 @@
-[]
+[
+  {
+    "name": "vite",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/vite",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.952619,
+      "composite_score": 0.190524
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2025-31125",
+        "CVE-2025-24010",
+        "CVE-2026-39364",
+        "CVE-2025-58751",
+        "CVE-2025-32395",
+        "CVE-2023-49293",
+        "CVE-2024-45812",
+        "CVE-2023-34092",
+        "CVE-2025-46565",
+        "CVE-2025-31486",
+        "CVE-2024-31207",
+        "CVE-2024-23331",
+        "CVE-2026-39365",
+        "CVE-2022-35204",
+        "CVE-2025-58752",
+        "CVE-2025-62522",
+        "CVE-2026-39363",
+        "CVE-2024-45811",
+        "CVE-2025-30208"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": true,
+      "max_epss": 0.88956
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "puppeteer",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/puppeteer",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.803462,
+      "composite_score": 0.160692
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2019-5786"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": true,
+      "max_epss": 0.89482
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "tar",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/tar",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.522064,
+      "composite_score": 0.104413
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2024-28863",
+        "CVE-2026-26960",
+        "CVE-2021-37712",
+        "CVE-2026-23745",
+        "CVE-2021-37713",
+        "CVE-2025-64118",
+        "CVE-2018-20834",
+        "CVE-2021-32804",
+        "CVE-2026-31802",
+        "CVE-2026-29786",
+        "CVE-2021-37701",
+        "CVE-2026-24842",
+        "CVE-2021-32803",
+        "CVE-2026-23950",
+        "CVE-2015-8860"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.84982
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "ws",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/ws",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.370027,
+      "composite_score": 0.074005
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2021-32640",
+        "CVE-2016-10518",
+        "CVE-2016-10542",
+        "CVE-2024-37890"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.66075
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "sequelize",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/sequelize",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.182136,
+      "composite_score": 0.036427
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2016-1000225",
+        "CVE-2023-22580",
+        "CVE-2019-10748",
+        "CVE-2019-10752",
+        "CVE-2016-10556",
+        "CVE-2023-25813",
+        "CVE-2023-22579",
+        "CVE-2015-1369",
+        "CVE-2023-22578",
+        "CVE-2016-10550",
+        "CVE-2016-10554",
+        "CVE-2026-30951",
+        "CVE-2019-10749",
+        "CVE-2016-10553",
+        "CVE-2019-11069"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "dompurify",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/dompurify",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.168496,
+      "composite_score": 0.033699
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2024-48910",
+        "CVE-2019-16728",
+        "CVE-2024-47875",
+        "CVE-2025-15599",
+        "CVE-2020-26870",
+        "CVE-2026-41238",
+        "CVE-2026-41239",
+        "CVE-2025-26791",
+        "CVE-2026-41240",
+        "CVE-2026-0540",
+        "CVE-2024-45801",
+        "CVE-2019-25155"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "axios",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/axios",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.163238,
+      "composite_score": 0.032648
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2024-39338",
+        "CVE-2020-28168",
+        "CVE-2025-27152",
+        "CVE-2026-25639",
+        "CVE-2019-10742",
+        "CVE-2023-45857",
+        "CVE-2026-39865",
+        "CVE-2025-62718",
+        "CVE-2026-40175",
+        "CVE-2025-58754",
+        "CVE-2021-3749"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "lodash",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/lodash",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.157522,
+      "composite_score": 0.031504
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2026-4800",
+        "CVE-2018-16487",
+        "CVE-2020-28500",
+        "CVE-2018-3721",
+        "CVE-2019-1010266",
+        "CVE-2019-10744",
+        "CVE-2020-8203",
+        "CVE-2021-23337",
+        "CVE-2025-13465",
+        "CVE-2026-2950"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "marked",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/marked",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.157522,
+      "composite_score": 0.031504
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2015-1370",
+        "CVE-2018-25110",
+        "CVE-2017-1000427",
+        "CVE-2022-21681",
+        "CVE-2014-3743",
+        "CVE-2021-21306",
+        "CVE-2016-10531",
+        "CVE-2022-21680",
+        "CVE-2015-8854",
+        "CVE-2017-16114"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "fast-xml-parser",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/fast-xml-parser",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.157522,
+      "composite_score": 0.031504
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2026-41650",
+        "CVE-2026-27942",
+        "CVE-2023-26920",
+        "CVE-2026-33036",
+        "CVE-2026-26278",
+        "CVE-2023-34104",
+        "CVE-2026-25896",
+        "CVE-2024-41818",
+        "CVE-2026-25128",
+        "CVE-2026-33349"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "sanitize-html",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/sanitize-html",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.151261,
+      "composite_score": 0.030252
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2024-21501",
+        "CVE-2017-16016",
+        "CVE-2016-1000237",
+        "CVE-2017-16017",
+        "CVE-2022-25887",
+        "CVE-2026-40186",
+        "CVE-2019-25225",
+        "CVE-2021-26540",
+        "CVE-2021-26539"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "xmldom",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/xmldom",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.14434,
+      "composite_score": 0.028868
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2026-41673",
+        "CVE-2021-21366",
+        "CVE-2022-39353",
+        "CVE-2026-41675",
+        "CVE-2021-32796",
+        "CVE-2026-41672",
+        "CVE-2026-34601",
+        "CVE-2026-41674"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "multer",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/multer",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.136602,
+      "composite_score": 0.02732
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2025-47944",
+        "CVE-2025-7338",
+        "CVE-2025-48997",
+        "CVE-2026-3304",
+        "CVE-2025-47935",
+        "CVE-2026-2359",
+        "CVE-2026-3520"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "mongoose",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/mongoose",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.12783,
+      "composite_score": 0.025566
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2019-17426",
+        "CVE-2022-2564",
+        "CVE-2022-24304",
+        "CVE-2024-53900",
+        "CVE-2023-3696",
+        "CVE-2025-23061"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "qs",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/qs",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.12783,
+      "composite_score": 0.025566
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2014-10064",
+        "CVE-2022-24999",
+        "CVE-2017-1000048",
+        "CVE-2026-2391",
+        "CVE-2014-7191",
+        "CVE-2025-15284"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "express",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/express",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.117704,
+      "composite_score": 0.023541
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2014-6393",
+        "CVE-2024-29041",
+        "CVE-2024-43796",
+        "CVE-2024-10491",
+        "CVE-2024-9266"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "xlsx",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/xlsx",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.117704,
+      "composite_score": 0.023541
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2023-30533",
+        "CVE-2021-32013",
+        "CVE-2021-32012",
+        "CVE-2024-22363",
+        "CVE-2021-32014"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "webpack",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/webpack",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.105727,
+      "composite_score": 0.021145
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2023-28154",
+        "CVE-2025-68157",
+        "CVE-2025-68458",
+        "CVE-2024-43788"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "moment",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/moment",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.105727,
+      "composite_score": 0.021145
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2016-4055",
+        "CVE-2022-31129",
+        "CVE-2017-18214",
+        "CVE-2022-24785"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "jsonwebtoken",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/jsonwebtoken",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.105727,
+      "composite_score": 0.021145
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2022-23540",
+        "CVE-2015-9235",
+        "CVE-2022-23541",
+        "CVE-2022-23539"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "serialize-javascript",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/serialize-javascript",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.105727,
+      "composite_score": 0.021145
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2019-16769",
+        "CVE-2024-11831",
+        "CVE-2020-7660",
+        "CVE-2026-34043"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "debug",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/debug",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.091068,
+      "composite_score": 0.018214
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2025-59144",
+        "CVE-2017-16137",
+        "CVE-2017-20165"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "node-fetch",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/node-fetch",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.091068,
+      "composite_score": 0.018214
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2022-0235",
+        "CVE-2022-2596",
+        "CVE-2020-15168"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "socket.io",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/socket.io",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.091068,
+      "composite_score": 0.018214
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2017-16031",
+        "CVE-2020-28481",
+        "CVE-2024-38355"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "underscore",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/underscore",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2026-27601",
+        "CVE-2021-23358"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "request",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/request",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2023-28155",
+        "CVE-2017-16026"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "minimist",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/minimist",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2020-7598",
+        "CVE-2021-44906"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "semver",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/semver",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2022-25883",
+        "CVE-2015-8855"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "jszip",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/jszip",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2021-23413",
+        "CVE-2022-48285"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "body-parser",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/body-parser",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2024-45590",
+        "CVE-2025-13466"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "ajv",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/ajv",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2020-15366",
+        "CVE-2025-69873"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "yaml",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/yaml",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2026-33532",
+        "CVE-2023-2251"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "rollup",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/rollup",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2026-27606",
+        "CVE-2024-47068"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "react",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/react",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2013-7035"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "async",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/async",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2021-43138"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "glob",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/glob",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2025-64756"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "bcrypt",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/bcrypt",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2020-7689"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "passport",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/passport",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2022-25896"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "redis",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/redis",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2021-29469"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "sharp",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/sharp",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2022-29256"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "decompress",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/decompress",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2020-12265"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "node-tar",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/node-tar",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2024-28863"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "pm2",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/pm2",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2025-5891"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "nx",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/nx",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2025-10894"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "playwright",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/playwright",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2025-59288"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "papaparse",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/papaparse",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2020-36649"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "exceljs",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/exceljs",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2018-16459"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "html-pdf",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/html-pdf",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.045534,
+      "composite_score": 0.009107
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2019-15138"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "babel-core",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/babel-core",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "chalk",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/chalk",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "commander",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/commander",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "uuid",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/uuid",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "mkdirp",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/mkdirp",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "rimraf",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/rimraf",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "through2",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/through2",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "bluebird",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/bluebird",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "q",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/q",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "jimp",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/jimp",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "pdf-lib",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/pdf-lib",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "archiver",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/archiver",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "cookie-parser",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/cookie-parser",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "cors",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/cors",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "helmet",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/helmet",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "express-validator",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/express-validator",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "joi",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/joi",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "yup",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/yup",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "fast-json-stringify",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/fast-json-stringify",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "toml",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/toml",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "dotenv",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/dotenv",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "cross-env",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/cross-env",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "concurrently",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/concurrently",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "nodemon",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/nodemon",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "forever",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/forever",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "turbo",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/turbo",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "esbuild",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/esbuild",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "swc",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/swc",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "typescript",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/typescript",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "jest",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/jest",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "mocha",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/mocha",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "chai",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/chai",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "sinon",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/sinon",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "supertest",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/supertest",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "cypress",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/cypress",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "selenium-webdriver",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/selenium-webdriver",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "cheerio",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/cheerio",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "jsdom",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/jsdom",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "csv-parser",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/csv-parser",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "pdfkit",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/pdfkit",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "puppeteer-pdf",
+    "ecosystem": "npm",
+    "purl": "pkg:npm/puppeteer-pdf",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.0,
+      "composite_score": 0.0
+    },
+    "threat": {
+      "associated_cves": [],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  }
+]
