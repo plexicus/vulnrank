@@ -56,14 +56,18 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Authenticate to Google Cloud
+        id: auth
         uses: google-github-actions/auth@v2
         with:
           workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
           service_account: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          token_format: access_token
+          scopes: https://www.googleapis.com/auth/drive
 
       - name: Curate CVE
         run: python scripts/run_single_curation.py
         env:
+          GOOGLE_AUTH_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
           CVE_ID: ${{ inputs.cve_id }}
           ECOSYSTEM: ${{ inputs.ecosystem }}
           PACKAGE: ${{ inputs.package }}

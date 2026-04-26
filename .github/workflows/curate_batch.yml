@@ -49,14 +49,18 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Authenticate to Google Cloud
+        id: auth
         uses: google-github-actions/auth@v2
         with:
           workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
           service_account: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          token_format: access_token
+          scopes: https://www.googleapis.com/auth/drive
 
       - name: Run batch curation
         run: python scripts/run_batch_curation.py
         env:
+          GOOGLE_AUTH_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
           MAX_CVES: ${{ inputs.max_cves || '100' }}
           FORCE: ${{ inputs.force || 'false' }}
           # Thursday schedule flips to legacy-heavy mode automatically.
