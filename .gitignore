@@ -26,8 +26,7 @@ env/
 *.swp
 
 # OMC session state (not project artifacts)
-.omc/state/
-.omc/sessions/
+.omc/
 
 # OS
 .DS_Store

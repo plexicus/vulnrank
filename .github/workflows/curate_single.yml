@@ -32,7 +32,7 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: read
   id-token: write
 
 # environment: curation  # Uncomment to require maintainer approval before each run
@@ -80,11 +80,3 @@ jobs:
           HETZNER_S3_BUCKET: ${{ secrets.HETZNER_S3_BUCKET }}
           GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Commit public curation status
-        run: |
-          git config user.name "vulnrank-bot"
-          git config user.email "bot@plexicus.ai"
-          git add data/curation_status/
-          git diff --staged --quiet || git commit -m "chore: curate ${{ inputs.cve_id }} (${{ inputs.ecosystem }}/${{ inputs.package }})"
-          git push

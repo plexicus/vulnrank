@@ -7,7 +7,7 @@ import os
 import sys
 
 from curator.storage.index import MasterIndex
-from curator.mark_curated import curate_one, save_public_status
+from curator.mark_curated import curate_one
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 log = logging.getLogger(__name__)
@@ -33,7 +33,6 @@ def main():
 
     print(json.dumps(result, indent=2))
     master.save()
-    save_public_status(master)
 
     if result["status"] == "failed":
         log.error("Curation failed: %s", result["error"])

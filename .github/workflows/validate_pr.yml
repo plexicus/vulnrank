@@ -4,7 +4,6 @@ on:
   pull_request:
     paths:
       - "data/rankings/**"
-      - "data/curation_status/**"
       - "config/weights.yaml"
       - "config/seed_packages.yaml"
       - "schemas/**"
@@ -57,35 +56,6 @@ jobs:
                   print(f"  {e}")
               sys.exit(1)
           print(f"All ranking files valid")
-          EOF
-
-      - name: Validate curation status index
-        run: |
-          python - <<'EOF'
-          import json, sys, os
-          import jsonschema
-
-          path = "data/curation_status/index.json"
-          if not os.path.exists(path):
-              print("No curation status index found, skipping")
-              sys.exit(0)
-
-          with open("schemas/curation_status.schema.json") as f:
-              schema = json.load(f)
-          with open(path) as f:
-              data = json.load(f)
-
-          # Ensure WARNING field is present
-          if "WARNING" not in data:
-              print("ERROR: curation_status/index.json missing WARNING field")
-              sys.exit(1)
-
-          try:
-              jsonschema.validate(data, schema)
-              print("Curation status index valid")
-          except jsonschema.ValidationError as e:
-              print(f"Curation status validation error: {e.message}")
-              sys.exit(1)
           EOF
 
       - name: Run unit tests

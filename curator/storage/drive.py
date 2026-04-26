@@ -28,8 +28,23 @@ def _service():
     return build("drive", "v3", credentials=creds, cache_discovery=False)
 
 
-def _root_folder() -> str:
-    return os.environ["GDRIVE_FOLDER_ID"]
+_ROOT_CACHE: dict[str, str] = {}
+
+
+def _root_folder(service=None) -> str:
+    """Return the ID of the `vulnrank` subfolder inside GDRIVE_FOLDER_ID.
+
+    The env var points to the parent (drive root); this helper finds-or-creates
+    a `vulnrank` subfolder so all data lives in a single dedicated container.
+    """
+    parent = os.environ["GDRIVE_FOLDER_ID"]
+    if parent in _ROOT_CACHE:
+        return _ROOT_CACHE[parent]
+    if service is None:
+        service = _service()
+    folder_id = _get_or_create_folder(service, parent, "vulnrank")
+    _ROOT_CACHE[parent] = folder_id
+    return folder_id
 
 
 def _get_or_create_folder(service, parent_id: str, name: str) -> str:
@@ -58,7 +73,7 @@ def upload_pack(pack: dict[str, Any], ecosystem: str, cve_id: str, package: str)
 
     try:
         service = _service()
-        root = _root_folder()
+        root = _root_folder(service)
 
         eco_folder = _get_or_create_folder(service, root, ecosystem)
         cve_folder = _get_or_create_folder(service, eco_folder, cve_id)
@@ -96,7 +111,7 @@ def upload_master_index(index: dict) -> None:
     from googleapiclient.http import MediaIoBaseUpload
     try:
         service = _service()
-        root = _root_folder()
+        root = _root_folder(service)
         filename = "master.json"
         body_bytes = json.dumps(index, indent=2).encode()
         media = MediaIoBaseUpload(BytesIO(body_bytes), mimetype="application/json")

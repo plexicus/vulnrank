@@ -1,6 +1,6 @@
 # VulnRank
 
-> Weekly vulnerability risk ranking for 500+ open-source libraries across 7 ecosystems, with AI-powered CVE knowledge packs for VEX generation.
+> Weekly composite-risk ranking of the most vulnerable open-source libraries across 7 ecosystems.
 
 [![Weekly Ranking](https://github.com/plexicus/vulnrank/actions/workflows/weekly_ranking.yml/badge.svg)](https://github.com/plexicus/vulnrank/actions/workflows/weekly_ranking.yml)
 [![Daily Threats](https://github.com/plexicus/vulnrank/actions/workflows/daily_threats.yml/badge.svg)](https://github.com/plexicus/vulnrank/actions/workflows/daily_threats.yml)
@@ -9,23 +9,23 @@
 
 ## What is this?
 
-VulnRank is a community-maintained dataset that does two things:
+VulnRank is a community-maintained dataset that does one thing:
 
-1. **Weekly Ranking** — Ranks the most vulnerable open-source libraries by composite risk score using public data from [deps.dev](https://deps.dev), [OSV.dev](https://osv.dev), [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog), and [FIRST EPSS](https://www.first.org/epss/). Updated every Monday.
-
-2. **CVE Knowledge Packs** — An AI pipeline (MiniMax M2.5) generates structured knowledge packs for high-priority CVEs, containing vulnerable symbol identification, exploitability conditions, and VEX statement templates. Stored privately in Hetzner S3 and used by [Reticulum](https://github.com/plexicus/reticulum) for automated VEX generation.
+**Weekly Ranking** — Ranks the most vulnerable open-source libraries by composite risk score using public data from [deps.dev](https://deps.dev), [OSV.dev](https://osv.dev), [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog), and [FIRST EPSS](https://www.first.org/epss/). Updated every Monday.
 
 ## Ecosystems covered
 
 | Ecosystem | File | Packages tracked |
 |-----------|------|-----------------|
-| npm | [data/rankings/npm.json](data/rankings/npm.json) | 80+ |
-| PyPI | [data/rankings/pypi.json](data/rankings/pypi.json) | 80+ |
-| Go | [data/rankings/go.json](data/rankings/go.json) | 50+ |
-| Maven | [data/rankings/maven.json](data/rankings/maven.json) | 50+ |
-| Cargo | [data/rankings/cargo.json](data/rankings/cargo.json) | 50+ |
-| NuGet | [data/rankings/nuget.json](data/rankings/nuget.json) | 35+ |
-| RubyGems | [data/rankings/rubygems.json](data/rankings/rubygems.json) | 50+ |
+| npm       | [data/rankings/npm.json](data/rankings/npm.json)           | 80+ |
+| PyPI      | [data/rankings/pypi.json](data/rankings/pypi.json)         | 80+ |
+| Go        | [data/rankings/go.json](data/rankings/go.json)             | 50+ |
+| Maven     | [data/rankings/maven.json](data/rankings/maven.json)       | 50+ |
+| Cargo     | [data/rankings/cargo.json](data/rankings/cargo.json)       | 50+ |
+| NuGet     | [data/rankings/nuget.json](data/rankings/nuget.json)       | 35+ |
+| RubyGems  | [data/rankings/rubygems.json](data/rankings/rubygems.json) | 50+ |
+
+A combined global top-500 across ecosystems is at [data/combined/top_500_global.json](data/combined/top_500_global.json).
 
 ## Composite score formula
 
@@ -33,7 +33,16 @@ VulnRank is a community-maintained dataset that does two things:
 composite = 0.50 × score_deps_dev + 0.30 × score_github + 0.20 × score_threat
 ```
 
-All sub-scores are log-normalised to [0, 1]. Weights are community-editable via PR with data-backed justification — see [config/weights.yaml](config/weights.yaml).
+All sub-scores are log-normalised to `[0, 1]`. Weights are community-editable via PR with data-backed justification — see [config/weights.yaml](config/weights.yaml).
+
+Sub-scores:
+
+- **score_deps_dev** — dependency centrality from [deps.dev](https://deps.dev) (dependents count, version churn).
+- **score_github** — repository signal (stars, forks, recent commit activity).
+- **score_threat** — CVE-derived risk:
+  - 50% mean CVSS of associated CVEs
+  - 30% max EPSS (FIRST.org)
+  - 20% CISA KEV presence
 
 ## Using the ranking data
 
@@ -46,79 +55,43 @@ with urllib.request.urlopen(url) as r:
 
 top_10 = npm_ranking[:10]
 for entry in top_10:
-    print(f"{entry['name']:30s}  composite={entry['scores']['composite_score']:.3f}  priority={entry['curation']['priority']}")
+    print(f"{entry['name']:30s}  composite={entry['scores']['composite_score']:.3f}")
 ```
 
-## Knowledge pack schema (summary)
+Each ranking entry validates against [schemas/library_rank.schema.json](schemas/library_rank.schema.json).
 
-Knowledge packs contain 7 semantic layers:
+## Data refresh cadence
 
-| Layer | Content |
-|-------|---------|
-| 1 — Identification | CVE ID, GHSA, aliases, package, PURL, summary |
-| 2 — Versions | Vulnerable ranges, fixed version, fix commit SHA |
-| 3 — Vulnerable symbols | Function/method-level analysis with diff evidence |
-| 4 — Exploitability | Auth, network, user-interaction requirements |
-| 5 — VEX templates | Ready-to-use not_affected / affected statements |
-| 6 — Detection patterns | Import/call/config patterns for SAST |
-| 7 — Provenance | Model, prompt version, confidence, human review status |
-
-> ⚠️ Knowledge packs are AI-generated. See [ACCURACY.md](ACCURACY.md) for limitations and confidence level definitions.
-
-## Curation status
-
-The public curation status index is at [data/curation_status/index.json](data/curation_status/index.json).
-It shows the curation status (`pending`, `curating`, `curated`, `failed`) and confidence level for each tracked CVE.
-**It does not contain knowledge pack content** — packs are stored privately.
+| Workflow | Schedule | Purpose |
+|----------|----------|---------|
+| [weekly_ranking.yml](.github/workflows/weekly_ranking.yml) | Mon 02:00 UTC | Full ranking refresh (deps.dev + OSV + GitHub) |
+| [daily_threats.yml](.github/workflows/daily_threats.yml)   | Daily 06:00 UTC | CISA KEV + EPSS refresh and threat-score recompute |
+| [validate_pr.yml](.github/workflows/validate_pr.yml)       | On PR | Schema + weights validation, unit tests |
 
 ## Running locally
 
 ```bash
+git clone https://github.com/plexicus/vulnrank
+cd vulnrank
+python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
 # Fetch threat intel
 python -m collectors.cisa_kev
 python -m collectors.epss
 
-# Fetch rankings for npm
-python -c "
-from collectors.deps_dev import fetch_ecosystem
-from collectors.osv_advisories import enrich_packages
-import yaml
-
-with open('config/seed_packages.yaml') as f:
-    seeds = yaml.safe_load(f)
-
-packages = fetch_ecosystem('npm', seeds['npm'][:10])
-enriched = enrich_packages(packages)
-print(enriched[0])
-"
+# Run the full ranking pipeline
+python scripts/run_ranking.py
 
 # Run tests
 pytest tests/ -v
 ```
 
-## Workflows
-
-| Workflow | Schedule | Purpose |
-|----------|----------|---------|
-| [weekly_ranking.yml](.github/workflows/weekly_ranking.yml) | Mon 02:00 UTC | Full ranking refresh |
-| [daily_threats.yml](.github/workflows/daily_threats.yml) | Daily 06:00 UTC | CISA KEV + EPSS refresh |
-| [curate_batch.yml](.github/workflows/curate_batch.yml) | Mon 04:00 UTC | Batch AI curation |
-| [curate_single.yml](.github/workflows/curate_single.yml) | Manual | Single CVE curation |
-| [validate_pr.yml](.github/workflows/validate_pr.yml) | On PR | Schema + test validation |
-
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add packages, propose weight changes, or report inaccuracies.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add packages or propose weight changes.
 
 ## License
 
 - **Code**: [Apache 2.0](LICENSE)
-- **Ranking data**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — attribution required
-- **Knowledge packs**: Proprietary (Plexicus AI)
-
-## Related projects
-
-- [Reticulum](https://github.com/plexicus/reticulum) — OSS VEX engine (Go) that consumes VulnRank knowledge packs
-- [Plexicus ASPM Platform](https://plexicus.ai) — Application Security Posture Management
+- **Ranking data** (`data/rankings/`, `data/combined/`, `data/threats/`): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — attribution required

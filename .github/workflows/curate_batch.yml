@@ -2,13 +2,18 @@ name: Batch CVE Curation
 
 on:
   schedule:
-    - cron: "0 4 * * 1"
+    - cron: "0 4 * * 1"  # Monday — balanced: 60% critical/high + 40% legacy
+    - cron: "0 4 * * 4"  # Thursday — legacy sweep: 20% critical/high + 80% usage-sorted
   workflow_dispatch:
     inputs:
       max_cves:
         description: "Max CVEs to curate in this run"
         required: false
-        default: "50"
+        default: "100"
+      primary_fraction:
+        description: "Fraction for critical/high queue (0.0–1.0)"
+        required: false
+        default: "0.6"
       force:
         description: "Re-curate already-curated CVEs"
         required: false
@@ -20,7 +25,7 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: read
   id-token: write
 
 # environment: curation  # Uncomment to require maintainer approval before each run
@@ -28,7 +33,7 @@ permissions:
 jobs:
   curate:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
 
     env:
       PYTHONPATH: ${{ github.workspace }}
@@ -53,8 +58,11 @@ jobs:
       - name: Run batch curation
         run: python scripts/run_batch_curation.py
         env:
-          MAX_CVES: ${{ inputs.max_cves || '50' }}
+          MAX_CVES: ${{ inputs.max_cves || '100' }}
           FORCE: ${{ inputs.force || 'false' }}
+          # Thursday schedule flips to legacy-heavy mode automatically.
+          # Manual dispatch can override via primary_fraction input.
+          PRIMARY_FRACTION: ${{ inputs.primary_fraction || (github.event.schedule == '0 4 * * 4' && '0.2' || '0.6') }}
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
           MINIMAX_SYSTEM_PROMPT: ${{ secrets.MINIMAX_SYSTEM_PROMPT }}
           HETZNER_S3_KEY: ${{ secrets.HETZNER_S3_KEY }}
@@ -64,11 +72,3 @@ jobs:
           GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NVDAPIKEY: ${{ secrets.NVDAPIKEY }}
-
-      - name: Commit public curation status
-        run: |
-          git config user.name "vulnrank-bot"
-          git config user.email "bot@plexicus.ai"
-          git add data/curation_status/
-          git diff --staged --quiet || git commit -m "chore: curation status update $(date -u +%Y-%m-%d)"
-          git push

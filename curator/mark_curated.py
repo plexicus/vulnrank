@@ -1,9 +1,6 @@
 """Orchestrates the full curation pipeline for one CVE-package pair."""
 
-import json
 import logging
-import os
-from datetime import datetime, timezone
 from typing import Any
 
 from curator.fetch_context import fetch as fetch_context
@@ -12,7 +9,7 @@ from curator.generate import run_chain, assemble_pack, PROMPT_VERSION, MODEL
 from curator.validate import validate_pack
 from curator.storage.s3 import upload_pack as s3_upload
 from curator.storage.drive import upload_pack as drive_upload
-from curator.storage.index import MasterIndex, DECISION_SKIP, DECISION_PROCESS, DECISION_RETRY, DECISION_REPROCESS
+from curator.storage.index import MasterIndex, DECISION_SKIP
 
 logger = logging.getLogger(__name__)
 
@@ -96,12 +93,3 @@ def curate_one(
         result["error"] = error_msg
 
     return result
-
-
-def save_public_status(master_index: MasterIndex,
-                        path: str = "data/curation_status/index.json") -> None:
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    status = master_index.export_public_status()
-    with open(path, "w") as f:
-        json.dump(status, f, indent=2)
-    logger.info("Public curation status saved to %s", path)
