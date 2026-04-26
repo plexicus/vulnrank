@@ -71,8 +71,7 @@ jobs:
           FIX_VERSION: ${{ inputs.fix_version }}
           GITHUB_REPO: ${{ inputs.github_repo }}
           FORCE: ${{ inputs.force }}
-          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
-          MINIMAX_SYSTEM_PROMPT: ${{ secrets.MINIMAX_SYSTEM_PROMPT }}
+          DEEPINFRA_API_KEY: ${{ secrets.DEEPINFRA_API_KEY }}
           HETZNER_S3_KEY: ${{ secrets.HETZNER_S3_KEY }}
           HETZNER_S3_SECRET: ${{ secrets.HETZNER_S3_SECRET }}
           HETZNER_S3_ENDPOINT: ${{ secrets.HETZNER_S3_ENDPOINT }}

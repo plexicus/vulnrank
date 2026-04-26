@@ -10,21 +10,18 @@ from openai import OpenAI
 logger = logging.getLogger(__name__)
 
 PROMPT_VERSION = "1.0.0"
-MODEL = "MiniMax-Text-01"
+MODEL = "google/gemma-4-26B-it"
 MAX_RETRIES = 2
 
 
 def _client() -> OpenAI:
     return OpenAI(
-        api_key=os.environ["MINIMAX_API_KEY"],
-        base_url="https://api.minimax.io/v1",
+        api_key=os.environ["DEEPINFRA_API_KEY"],
+        base_url="https://api.deepinfra.com/v1/openai",
     )
 
 
 def _system_prompt() -> str:
-    base = os.environ.get("MINIMAX_SYSTEM_PROMPT", "")
-    if base:
-        return base
     return (
         "You are a security vulnerability analyst. You produce structured JSON knowledge packs "
         "about CVEs. You MUST follow these rules:\n"
