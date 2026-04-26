@@ -247,7 +247,7 @@ def assemble_pack(payload: dict[str, Any], llm_output: dict[str, Any],
             "affected_ecosystem": prefill["ecosystem"],
             "affected_package": prefill["package"],
             "purl": _build_purl(prefill["ecosystem"], prefill["package"]),
-            "summary": s1.get("summary", ""),
+            "summary": s1.get("summary") or f"Vulnerability in {prefill['package']} ({prefill['cve_id']}). No advisory available.",
         },
         "layer2": {
             "vulnerable_versions": s1.get("vulnerable_versions", []),
