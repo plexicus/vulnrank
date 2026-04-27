@@ -41,156 +41,6 @@
     }
   },
   {
-    "name": "com.fasterxml.jackson.core:jackson-databind",
-    "ecosystem": "maven",
-    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind",
-    "default_version": null,
-    "github_repo": null,
-    "signals": {
-      "deps_dev_dependent_count": 0,
-      "github_stars": null,
-      "github_forks": null
-    },
-    "scores": {
-      "score_deps_dev": 0.0,
-      "score_github": 0.0,
-      "score_threat": 0.618887,
-      "composite_score": 0.123777
-    },
-    "threat": {
-      "associated_cves": [
-        "CVE-2019-16942",
-        "CVE-2019-16943",
-        "CVE-2019-14893",
-        "CVE-2018-5968",
-        "CVE-2018-7489",
-        "CVE-2020-36184",
-        "CVE-2020-11111",
-        "CVE-2020-10672",
-        "CVE-2021-20190",
-        "CVE-2020-11113",
-        "CVE-2019-12814",
-        "CVE-2020-14195",
-        "CVE-2017-17485",
-        "CVE-2019-17531",
-        "CVE-2018-19360",
-        "CVE-2019-14379",
-        "CVE-2020-10673",
-        "CVE-2020-24616",
-        "CVE-2018-14719",
-        "CVE-2022-42004"
-      ],
-      "max_cvss": null,
-      "in_cisa_kev": false,
-      "max_epss": 0.84949
-    },
-    "curation": {
-      "priority": "critical",
-      "status": "pending",
-      "coverage_pct": 0.0
-    }
-  },
-  {
-    "name": "org.springframework.security:spring-security-core",
-    "ecosystem": "maven",
-    "purl": "pkg:maven/org.springframework.security/spring-security-core",
-    "default_version": null,
-    "github_repo": null,
-    "signals": {
-      "deps_dev_dependent_count": 0,
-      "github_stars": null,
-      "github_forks": null
-    },
-    "scores": {
-      "score_deps_dev": 0.0,
-      "score_github": 0.0,
-      "score_threat": 0.586271,
-      "composite_score": 0.117254
-    },
-    "threat": {
-      "associated_cves": [
-        "CVE-2019-11272",
-        "CVE-2024-22257",
-        "CVE-2014-3527",
-        "CVE-2016-5007",
-        "CVE-2024-38827",
-        "CVE-2025-41248",
-        "CVE-2011-2731",
-        "CVE-2021-22119",
-        "CVE-2022-22976",
-        "CVE-2023-20862",
-        "CVE-2018-1199",
-        "CVE-2025-22223",
-        "CVE-2017-4995",
-        "CVE-2025-22234",
-        "CVE-2012-5055",
-        "CVE-2010-3700",
-        "CVE-2019-3795",
-        "CVE-2024-38810",
-        "CVE-2025-41232",
-        "CVE-2018-15801"
-      ],
-      "max_cvss": null,
-      "in_cisa_kev": false,
-      "max_epss": 0.9071
-    },
-    "curation": {
-      "priority": "critical",
-      "status": "pending",
-      "coverage_pct": 0.0
-    }
-  },
-  {
-    "name": "org.eclipse.jetty:jetty-server",
-    "ecosystem": "maven",
-    "purl": "pkg:maven/org.eclipse.jetty/jetty-server",
-    "default_version": null,
-    "github_repo": null,
-    "signals": {
-      "deps_dev_dependent_count": 0,
-      "github_stars": null,
-      "github_forks": null
-    },
-    "scores": {
-      "score_deps_dev": 0.0,
-      "score_github": 0.0,
-      "score_threat": 0.586165,
-      "composite_score": 0.117233
-    },
-    "threat": {
-      "associated_cves": [
-        "CVE-2019-10246",
-        "CVE-2019-10247",
-        "CVE-2024-13009",
-        "CVE-2020-27223",
-        "CVE-2018-12545",
-        "CVE-2011-4461",
-        "CVE-2017-7656",
-        "CVE-2021-34428",
-        "CVE-2022-2191",
-        "CVE-2019-10241",
-        "CVE-2018-12536",
-        "CVE-2006-6969",
-        "CVE-2026-1605",
-        "CVE-2017-7658",
-        "CVE-2019-17638",
-        "CVE-2018-12538",
-        "CVE-2016-4800",
-        "CVE-2019-17632",
-        "CVE-2017-7657",
-        "CVE-2023-26049"
-      ],
-      "max_cvss": null,
-      "in_cisa_kev": false,
-      "max_epss": 0.92414
-    },
-    "curation": {
-      "priority": "critical",
-      "status": "pending",
-      "coverage_pct": 0.0
-    }
-  },
-  {
     "name": "org.springframework:spring-core",
     "ecosystem": "maven",
     "purl": "pkg:maven/org.springframework/spring-core",
@@ -231,6 +81,56 @@
       "max_cvss": null,
       "in_cisa_kev": false,
       "max_epss": 0.90599
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "com.fasterxml.jackson.core:jackson-databind",
+    "ecosystem": "maven",
+    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.539796,
+      "composite_score": 0.107959
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2019-16942",
+        "CVE-2019-16943",
+        "CVE-2019-14893",
+        "CVE-2018-5968",
+        "CVE-2018-7489",
+        "CVE-2020-36184",
+        "CVE-2020-11111",
+        "CVE-2020-10672",
+        "CVE-2021-20190",
+        "CVE-2020-11113",
+        "CVE-2019-12814",
+        "CVE-2020-14195",
+        "CVE-2017-17485",
+        "CVE-2019-17531",
+        "CVE-2018-19360",
+        "CVE-2019-14379",
+        "CVE-2020-10673",
+        "CVE-2020-24616",
+        "CVE-2018-14719",
+        "CVE-2022-42004"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.84949
     },
     "curation": {
       "priority": "critical",
@@ -290,8 +190,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.476386,
-      "composite_score": 0.095277
+      "score_threat": 0.464932,
+      "composite_score": 0.092986
     },
     "threat": {
       "associated_cves": [
@@ -423,6 +323,106 @@
     }
   },
   {
+    "name": "org.springframework.security:spring-security-core",
+    "ecosystem": "maven",
+    "purl": "pkg:maven/org.springframework.security/spring-security-core",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.2,
+      "composite_score": 0.04
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2019-11272",
+        "CVE-2024-22257",
+        "CVE-2014-3527",
+        "CVE-2016-5007",
+        "CVE-2024-38827",
+        "CVE-2025-41248",
+        "CVE-2011-2731",
+        "CVE-2021-22119",
+        "CVE-2022-22976",
+        "CVE-2023-20862",
+        "CVE-2018-1199",
+        "CVE-2025-22223",
+        "CVE-2017-4995",
+        "CVE-2025-22234",
+        "CVE-2012-5055",
+        "CVE-2010-3700",
+        "CVE-2019-3795",
+        "CVE-2024-38810",
+        "CVE-2025-41232",
+        "CVE-2018-15801"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "org.eclipse.jetty:jetty-server",
+    "ecosystem": "maven",
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-server",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.2,
+      "composite_score": 0.04
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2019-10246",
+        "CVE-2019-10247",
+        "CVE-2024-13009",
+        "CVE-2020-27223",
+        "CVE-2018-12545",
+        "CVE-2011-4461",
+        "CVE-2017-7656",
+        "CVE-2021-34428",
+        "CVE-2022-2191",
+        "CVE-2019-10241",
+        "CVE-2018-12536",
+        "CVE-2006-6969",
+        "CVE-2026-1605",
+        "CVE-2017-7658",
+        "CVE-2019-17638",
+        "CVE-2018-12538",
+        "CVE-2016-4800",
+        "CVE-2019-17632",
+        "CVE-2017-7657",
+        "CVE-2023-26049"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
     "name": "io.undertow:undertow-core",
     "ecosystem": "maven",
     "purl": "pkg:maven/io.undertow/undertow-core",
@@ -436,8 +436,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.242329,
-      "composite_score": 0.048466
+      "score_threat": 0.2,
+      "composite_score": 0.04
     },
     "threat": {
       "associated_cves": [

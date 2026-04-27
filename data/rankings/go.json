@@ -13,8 +13,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.99163,
-      "composite_score": 0.198326
+      "score_threat": 0.9776,
+      "composite_score": 0.19552
     },
     "threat": {
       "associated_cves": [
@@ -63,8 +63,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.580712,
-      "composite_score": 0.116142
+      "score_threat": 0.53336,
+      "composite_score": 0.106672
     },
     "threat": {
       "associated_cves": [
@@ -91,7 +91,7 @@
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
-      "max_epss": 0.87755
+      "max_epss": 0.8334
     },
     "curation": {
       "priority": "critical",
@@ -113,8 +113,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.264432,
-      "composite_score": 0.052886
+      "score_threat": 0.2,
+      "composite_score": 0.04
     },
     "threat": {
       "associated_cves": [
