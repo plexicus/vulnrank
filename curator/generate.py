@@ -227,6 +227,25 @@ Diff available: {diff_available}
     return raw_output, retry_count
 
 
+def _coerce_str_list(items: list) -> list[str]:
+    """Coerce pattern list items to strings.
+
+    The LLM sometimes returns objects like {"pattern": "...", "description": "..."}
+    instead of plain strings.  Extract the most meaningful string field rather than
+    letting schema validation hard-fail.
+    """
+    result: list[str] = []
+    for item in items:
+        if isinstance(item, str):
+            result.append(item)
+        elif isinstance(item, dict):
+            # Prefer explicit 'pattern' key, then any other string value
+            val = item.get("pattern") or item.get("value") or item.get("name")
+            if val and isinstance(val, str):
+                result.append(val)
+    return result
+
+
 def assemble_pack(payload: dict[str, Any], llm_output: dict[str, Any],
                   retry_count: int) -> dict[str, Any]:
     """Assemble the full knowledge pack from prefill + LLM output."""
@@ -292,9 +311,9 @@ def assemble_pack(payload: dict[str, Any], llm_output: dict[str, Any],
             },
         }),
         "layer6": {
-            "import_patterns": s5.get("detection_patterns", {}).get("import_patterns", []),
-            "call_patterns":   s5.get("detection_patterns", {}).get("call_patterns", []),
-            "config_patterns": s5.get("detection_patterns", {}).get("config_patterns", []),
+            "import_patterns": _coerce_str_list(s5.get("detection_patterns", {}).get("import_patterns", [])),
+            "call_patterns":   _coerce_str_list(s5.get("detection_patterns", {}).get("call_patterns", [])),
+            "config_patterns": _coerce_str_list(s5.get("detection_patterns", {}).get("config_patterns", [])),
         },
         "layer7": {
             "curated_by":      "vulnrank-pipeline",
