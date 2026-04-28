@@ -62,8 +62,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.803462,
-      "composite_score": 0.160692
+      "score_threat": 0.80307,
+      "composite_score": 0.160614
     },
     "threat": {
       "associated_cves": [
@@ -71,7 +71,7 @@
       ],
       "max_cvss": null,
       "in_cisa_kev": true,
-      "max_epss": 0.89482
+      "max_epss": 0.89384
     },
     "curation": {
       "priority": "critical",
