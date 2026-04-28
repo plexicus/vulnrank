@@ -50,7 +50,12 @@ def _get_or_create_folder(service, parent_id: str, name: str) -> str:
         f"name='{name}' and '{parent_id}' in parents "
         f"and mimeType='application/vnd.google-apps.folder' and trashed=false"
     )
-    results = service.files().list(q=query, fields="files(id,name)").execute()
+    results = service.files().list(
+        q=query,
+        fields="files(id,name)",
+        supportsAllDrives=True,
+        includeItemsFromAllDrives=True,
+    ).execute()
     files = results.get("files", [])
     if files:
         return files[0]["id"]
@@ -60,7 +65,7 @@ def _get_or_create_folder(service, parent_id: str, name: str) -> str:
         "mimeType": "application/vnd.google-apps.folder",
         "parents": [parent_id],
     }
-    folder = service.files().create(body=meta, fields="id").execute()
+    folder = service.files().create(body=meta, fields="id", supportsAllDrives=True).execute()
     return folder["id"]
 
 
@@ -90,13 +95,21 @@ def upload_pack(pack: dict[str, Any], ecosystem: str, cve_id: str, package: str)
 
         # Check if file already exists
         q = f"name='{filename}' and '{parent_id}' in parents and trashed=false"
-        existing = service.files().list(q=q, fields="files(id)").execute().get("files", [])
+        existing = service.files().list(
+            q=q, fields="files(id)",
+            supportsAllDrives=True,
+            includeItemsFromAllDrives=True,
+        ).execute().get("files", [])
 
         if existing:
-            service.files().update(fileId=existing[0]["id"], media_body=media).execute()
+            service.files().update(
+                fileId=existing[0]["id"], media_body=media, supportsAllDrives=True,
+            ).execute()
         else:
             meta = {"name": filename, "parents": [parent_id]}
-            service.files().create(body=meta, media_body=media, fields="id").execute()
+            service.files().create(
+                body=meta, media_body=media, fields="id", supportsAllDrives=True,
+            ).execute()
 
         logger.info("Drive backup uploaded: %s/%s/%s", ecosystem, cve_id, package)
 
@@ -114,12 +127,20 @@ def upload_master_index(index: dict) -> None:
         media = MediaIoBaseUpload(BytesIO(body_bytes), mimetype="application/json")
 
         q = f"name='{filename}' and '{root}' in parents and trashed=false"
-        existing = service.files().list(q=q, fields="files(id)").execute().get("files", [])
+        existing = service.files().list(
+            q=q, fields="files(id)",
+            supportsAllDrives=True,
+            includeItemsFromAllDrives=True,
+        ).execute().get("files", [])
         if existing:
-            service.files().update(fileId=existing[0]["id"], media_body=media).execute()
+            service.files().update(
+                fileId=existing[0]["id"], media_body=media, supportsAllDrives=True,
+            ).execute()
         else:
             meta = {"name": filename, "parents": [root]}
-            service.files().create(body=meta, media_body=media, fields="id").execute()
+            service.files().create(
+                body=meta, media_body=media, fields="id", supportsAllDrives=True,
+            ).execute()
         logger.info("Drive master index updated")
     except Exception as e:
         logger.warning("Drive master index upload failed — non-fatal: %s", e)
