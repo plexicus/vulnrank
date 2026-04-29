@@ -1,5 +1,19 @@
 [
   {
+    "cve_id": "CVE-2024-1708",
+    "vendor": "ConnectWise",
+    "product": "ScreenConnect",
+    "date_added": "2026-04-28",
+    "known_ransomware": false
+  },
+  {
+    "cve_id": "CVE-2026-32202",
+    "vendor": "Microsoft",
+    "product": "Windows",
+    "date_added": "2026-04-28",
+    "known_ransomware": false
+  },
+  {
     "cve_id": "CVE-2025-29635",
     "vendor": "D-Link",
     "product": "DIR-823X",
