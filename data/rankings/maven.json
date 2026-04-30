@@ -152,8 +152,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.520828,
-      "composite_score": 0.104166
+      "score_threat": 0.520692,
+      "composite_score": 0.104138
     },
     "threat": {
       "associated_cves": [
@@ -168,7 +168,7 @@
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
-      "max_epss": 0.94122
+      "max_epss": 0.94088
     },
     "curation": {
       "priority": "critical",
@@ -190,8 +190,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.464932,
-      "composite_score": 0.092986
+      "score_threat": 0.464992,
+      "composite_score": 0.092998
     },
     "threat": {
       "associated_cves": [
@@ -218,7 +218,7 @@
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
-      "max_epss": 0.66233
+      "max_epss": 0.66248
     },
     "curation": {
       "priority": "critical",
@@ -273,8 +273,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.358014,
-      "composite_score": 0.071603
+      "score_threat": 0.359622,
+      "composite_score": 0.071924
     },
     "threat": {
       "associated_cves": [
@@ -283,7 +283,7 @@
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
-      "max_epss": 0.71461
+      "max_epss": 0.71863
     },
     "curation": {
       "priority": "critical",
