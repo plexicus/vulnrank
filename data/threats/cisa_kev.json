@@ -1,5 +1,12 @@
 [
   {
+    "cve_id": "CVE-2026-41940",
+    "vendor": "WebPros",
+    "product": "cPanel & WHM and WP2 (WordPress Squared)",
+    "date_added": "2026-04-30",
+    "known_ransomware": false
+  },
+  {
     "cve_id": "CVE-2024-1708",
     "vendor": "ConnectWise",
     "product": "ScreenConnect",
