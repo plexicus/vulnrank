@@ -1,5 +1,12 @@
 [
   {
+    "cve_id": "CVE-2026-31431",
+    "vendor": "Linux",
+    "product": "Kernel",
+    "date_added": "2026-05-01",
+    "known_ransomware": false
+  },
+  {
     "cve_id": "CVE-2026-41940",
     "vendor": "WebPros",
     "product": "cPanel & WHM and WP2 (WordPress Squared)",
