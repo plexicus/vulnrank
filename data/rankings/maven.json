@@ -41,106 +41,6 @@
     }
   },
   {
-    "name": "com.fasterxml.jackson.core:jackson-databind",
-    "ecosystem": "maven",
-    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind",
-    "default_version": null,
-    "github_repo": null,
-    "signals": {
-      "deps_dev_dependent_count": 0,
-      "github_stars": null,
-      "github_forks": null
-    },
-    "scores": {
-      "score_deps_dev": 0.0,
-      "score_github": 0.0,
-      "score_threat": 0.618887,
-      "composite_score": 0.123777
-    },
-    "threat": {
-      "associated_cves": [
-        "CVE-2018-14719",
-        "CVE-2019-16943",
-        "CVE-2020-35490",
-        "CVE-2020-14060",
-        "CVE-2020-14062",
-        "CVE-2020-36518",
-        "CVE-2020-35728",
-        "CVE-2020-36186",
-        "CVE-2018-12023",
-        "CVE-2017-7525",
-        "CVE-2018-5968",
-        "CVE-2022-42003",
-        "CVE-2019-14540",
-        "CVE-2020-35491",
-        "CVE-2020-36185",
-        "CVE-2020-36179",
-        "CVE-2020-10969",
-        "CVE-2019-12086",
-        "CVE-2018-19361",
-        "CVE-2020-8840"
-      ],
-      "max_cvss": null,
-      "in_cisa_kev": false,
-      "max_epss": 0.84949
-    },
-    "curation": {
-      "priority": "critical",
-      "status": "pending",
-      "coverage_pct": 0.0
-    }
-  },
-  {
-    "name": "org.springframework.security:spring-security-core",
-    "ecosystem": "maven",
-    "purl": "pkg:maven/org.springframework.security/spring-security-core",
-    "default_version": null,
-    "github_repo": null,
-    "signals": {
-      "deps_dev_dependent_count": 0,
-      "github_stars": null,
-      "github_forks": null
-    },
-    "scores": {
-      "score_deps_dev": 0.0,
-      "score_github": 0.0,
-      "score_threat": 0.586271,
-      "composite_score": 0.117254
-    },
-    "threat": {
-      "associated_cves": [
-        "CVE-2011-2732",
-        "CVE-2011-2731",
-        "CVE-2024-22257",
-        "CVE-2011-2894",
-        "CVE-2014-3527",
-        "CVE-2023-20862",
-        "CVE-2020-5407",
-        "CVE-2025-41248",
-        "CVE-2025-22223",
-        "CVE-2018-15801",
-        "CVE-2024-38827",
-        "CVE-2024-38810",
-        "CVE-2022-22978",
-        "CVE-2019-3795",
-        "CVE-2014-0097",
-        "CVE-2025-41232",
-        "CVE-2017-4995",
-        "CVE-2022-22976",
-        "CVE-2025-22234",
-        "CVE-2024-22234"
-      ],
-      "max_cvss": null,
-      "in_cisa_kev": false,
-      "max_epss": 0.9071
-    },
-    "curation": {
-      "priority": "critical",
-      "status": "pending",
-      "coverage_pct": 0.0
-    }
-  },
-  {
     "name": "org.eclipse.jetty:jetty-server",
     "ecosystem": "maven",
     "purl": "pkg:maven/org.eclipse.jetty/jetty-server",
@@ -154,8 +54,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.586165,
-      "composite_score": 0.117233
+      "score_threat": 0.569656,
+      "composite_score": 0.113931
     },
     "threat": {
       "associated_cves": [
@@ -183,6 +83,56 @@
       "max_cvss": null,
       "in_cisa_kev": false,
       "max_epss": 0.92414
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "org.springframework.security:spring-security-core",
+    "ecosystem": "maven",
+    "purl": "pkg:maven/org.springframework.security/spring-security-core",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.56284,
+      "composite_score": 0.112568
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2011-2732",
+        "CVE-2011-2731",
+        "CVE-2024-22257",
+        "CVE-2011-2894",
+        "CVE-2014-3527",
+        "CVE-2023-20862",
+        "CVE-2020-5407",
+        "CVE-2025-41248",
+        "CVE-2025-22223",
+        "CVE-2018-15801",
+        "CVE-2024-38827",
+        "CVE-2024-38810",
+        "CVE-2022-22978",
+        "CVE-2019-3795",
+        "CVE-2014-0097",
+        "CVE-2025-41232",
+        "CVE-2017-4995",
+        "CVE-2022-22976",
+        "CVE-2025-22234",
+        "CVE-2024-22234"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.9071
     },
     "curation": {
       "priority": "critical",
@@ -231,6 +181,56 @@
       "max_cvss": null,
       "in_cisa_kev": false,
       "max_epss": 0.90996
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "com.fasterxml.jackson.core:jackson-databind",
+    "ecosystem": "maven",
+    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.52386,
+      "composite_score": 0.104772
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2018-14719",
+        "CVE-2019-16943",
+        "CVE-2020-35490",
+        "CVE-2020-14060",
+        "CVE-2020-14062",
+        "CVE-2020-36518",
+        "CVE-2020-35728",
+        "CVE-2020-36186",
+        "CVE-2018-12023",
+        "CVE-2017-7525",
+        "CVE-2018-5968",
+        "CVE-2022-42003",
+        "CVE-2019-14540",
+        "CVE-2020-35491",
+        "CVE-2020-36185",
+        "CVE-2020-36179",
+        "CVE-2020-10969",
+        "CVE-2019-12086",
+        "CVE-2018-19361",
+        "CVE-2020-8840"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.80965
     },
     "curation": {
       "priority": "critical",
@@ -290,8 +290,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.476446,
-      "composite_score": 0.095289
+      "score_threat": 0.464992,
+      "composite_score": 0.092998
     },
     "threat": {
       "associated_cves": [
@@ -436,8 +436,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.242329,
-      "composite_score": 0.048466
+      "score_threat": 0.2,
+      "composite_score": 0.04
     },
     "threat": {
       "associated_cves": [
