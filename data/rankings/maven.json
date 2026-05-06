@@ -189,56 +189,6 @@
     }
   },
   {
-    "name": "com.fasterxml.jackson.core:jackson-databind",
-    "ecosystem": "maven",
-    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind",
-    "default_version": null,
-    "github_repo": null,
-    "signals": {
-      "deps_dev_dependent_count": 0,
-      "github_stars": null,
-      "github_forks": null
-    },
-    "scores": {
-      "score_deps_dev": 0.0,
-      "score_github": 0.0,
-      "score_threat": 0.52386,
-      "composite_score": 0.104772
-    },
-    "threat": {
-      "associated_cves": [
-        "CVE-2018-14719",
-        "CVE-2019-16943",
-        "CVE-2020-35490",
-        "CVE-2020-14060",
-        "CVE-2020-14062",
-        "CVE-2020-36518",
-        "CVE-2020-35728",
-        "CVE-2020-36186",
-        "CVE-2018-12023",
-        "CVE-2017-7525",
-        "CVE-2018-5968",
-        "CVE-2022-42003",
-        "CVE-2019-14540",
-        "CVE-2020-35491",
-        "CVE-2020-36185",
-        "CVE-2020-36179",
-        "CVE-2020-10969",
-        "CVE-2019-12086",
-        "CVE-2018-19361",
-        "CVE-2020-8840"
-      ],
-      "max_cvss": null,
-      "in_cisa_kev": false,
-      "max_epss": 0.80965
-    },
-    "curation": {
-      "priority": "critical",
-      "status": "pending",
-      "coverage_pct": 0.0
-    }
-  },
-  {
     "name": "org.yaml:snakeyaml",
     "ecosystem": "maven",
     "purl": "pkg:maven/org.yaml/snakeyaml",
@@ -269,6 +219,56 @@
       "max_cvss": null,
       "in_cisa_kev": false,
       "max_epss": 0.93796
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "com.fasterxml.jackson.core:jackson-databind",
+    "ecosystem": "maven",
+    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.517068,
+      "composite_score": 0.103414
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2018-14719",
+        "CVE-2019-16943",
+        "CVE-2020-35490",
+        "CVE-2020-14060",
+        "CVE-2020-14062",
+        "CVE-2020-36518",
+        "CVE-2020-35728",
+        "CVE-2020-36186",
+        "CVE-2018-12023",
+        "CVE-2017-7525",
+        "CVE-2018-5968",
+        "CVE-2022-42003",
+        "CVE-2019-14540",
+        "CVE-2020-35491",
+        "CVE-2020-36185",
+        "CVE-2020-36179",
+        "CVE-2020-10969",
+        "CVE-2019-12086",
+        "CVE-2018-19361",
+        "CVE-2020-8840"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.79267
     },
     "curation": {
       "priority": "critical",
