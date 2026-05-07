@@ -13,8 +13,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.94067,
-      "composite_score": 0.188134
+      "score_threat": 0.941038,
+      "composite_score": 0.188208
     },
     "threat": {
       "associated_cves": [
@@ -32,7 +32,7 @@
       ],
       "max_cvss": null,
       "in_cisa_kev": true,
-      "max_epss": 0.94358
+      "max_epss": 0.9445
     },
     "curation": {
       "priority": "critical",
