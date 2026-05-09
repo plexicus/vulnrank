@@ -1,5 +1,12 @@
 [
   {
+    "cve_id": "CVE-2026-42208",
+    "vendor": "BerriAI",
+    "product": "LiteLLM",
+    "date_added": "2026-05-08",
+    "known_ransomware": false
+  },
+  {
     "cve_id": "CVE-2026-6973",
     "vendor": "Ivanti",
     "product": "Endpoint Manager Mobile (EPMM)",
