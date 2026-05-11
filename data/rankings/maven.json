@@ -18,17 +18,17 @@
     },
     "threat": {
       "associated_cves": [
-        "CVE-2017-5645",
         "CVE-2020-9488",
-        "CVE-2021-44832",
-        "CVE-2023-26464",
-        "CVE-2021-45105",
         "CVE-2025-68161",
+        "CVE-2017-5645",
+        "CVE-2023-26464",
+        "CVE-2021-44832",
+        "CVE-2026-34480",
+        "CVE-2021-45105",
         "CVE-2021-45046",
         "CVE-2026-34478",
-        "CVE-2026-34480",
-        "CVE-2021-44228",
-        "CVE-2026-34477"
+        "CVE-2026-34477",
+        "CVE-2021-44228"
       ],
       "max_cvss": null,
       "in_cisa_kev": true,
@@ -41,9 +41,9 @@
     }
   },
   {
-    "name": "org.eclipse.jetty:jetty-server",
+    "name": "com.fasterxml.jackson.core:jackson-databind",
     "ecosystem": "maven",
-    "purl": "pkg:maven/org.eclipse.jetty/jetty-server",
+    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind",
     "default_version": null,
     "github_repo": null,
     "signals": {
@@ -54,35 +54,35 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.569656,
-      "composite_score": 0.113931
+      "score_threat": 0.618887,
+      "composite_score": 0.123777
     },
     "threat": {
       "associated_cves": [
-        "CVE-2026-1605",
-        "CVE-2023-26049",
-        "CVE-2019-10247",
-        "CVE-2020-27223",
-        "CVE-2021-34428",
-        "CVE-2020-27218",
-        "CVE-2006-6969",
-        "CVE-2018-12545",
-        "CVE-2017-7657",
-        "CVE-2019-10246",
-        "CVE-2018-12538",
-        "CVE-2021-28165",
-        "CVE-2022-2191",
-        "CVE-2019-17632",
-        "CVE-2011-4461",
-        "CVE-2017-7658",
-        "CVE-2024-8184",
-        "CVE-2018-12536",
-        "CVE-2016-4800",
-        "CVE-2015-2080"
+        "CVE-2020-36184",
+        "CVE-2020-14061",
+        "CVE-2018-11307",
+        "CVE-2020-11112",
+        "CVE-2022-42003",
+        "CVE-2019-14892",
+        "CVE-2017-15095",
+        "CVE-2020-9546",
+        "CVE-2020-35491",
+        "CVE-2019-16335",
+        "CVE-2020-10672",
+        "CVE-2018-14718",
+        "CVE-2020-36188",
+        "CVE-2019-14893",
+        "CVE-2018-12023",
+        "CVE-2020-36186",
+        "CVE-2019-20330",
+        "CVE-2018-19360",
+        "CVE-2020-9548",
+        "CVE-2020-9547"
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
-      "max_epss": 0.92414
+      "max_epss": 0.84949
     },
     "curation": {
       "priority": "critical",
@@ -104,35 +104,85 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.560896,
-      "composite_score": 0.112179
+      "score_threat": 0.588566,
+      "composite_score": 0.117713
     },
     "threat": {
       "associated_cves": [
-        "CVE-2011-2732",
-        "CVE-2011-2731",
         "CVE-2024-22257",
-        "CVE-2011-2894",
+        "CVE-2021-22119",
+        "CVE-2026-22751",
+        "CVE-2020-5408",
         "CVE-2014-3527",
-        "CVE-2023-20862",
+        "CVE-2016-5007",
+        "CVE-2025-41232",
+        "CVE-2024-38827",
+        "CVE-2019-3795",
+        "CVE-2022-31692",
+        "CVE-2025-22234",
         "CVE-2020-5407",
+        "CVE-2017-4995",
+        "CVE-2024-38810",
+        "CVE-2026-22746",
+        "CVE-2010-3700",
+        "CVE-2019-11272",
         "CVE-2025-41248",
         "CVE-2025-22223",
-        "CVE-2018-15801",
-        "CVE-2024-38827",
-        "CVE-2024-38810",
-        "CVE-2022-22978",
-        "CVE-2019-3795",
-        "CVE-2014-0097",
-        "CVE-2025-41232",
-        "CVE-2017-4995",
-        "CVE-2022-22976",
-        "CVE-2025-22234",
-        "CVE-2024-22234"
+        "CVE-2022-22976"
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
       "max_epss": 0.90224
+    },
+    "curation": {
+      "priority": "critical",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "org.eclipse.jetty:jetty-server",
+    "ecosystem": "maven",
+    "purl": "pkg:maven/org.eclipse.jetty/jetty-server",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.586165,
+      "composite_score": 0.117233
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2019-10247",
+        "CVE-2024-8184",
+        "CVE-2016-4800",
+        "CVE-2018-12545",
+        "CVE-2015-2080",
+        "CVE-2024-13009",
+        "CVE-2019-17632",
+        "CVE-2022-2191",
+        "CVE-2017-7658",
+        "CVE-2017-7656",
+        "CVE-2023-26049",
+        "CVE-2019-10241",
+        "CVE-2020-27218",
+        "CVE-2023-26048",
+        "CVE-2026-1605",
+        "CVE-2021-34428",
+        "CVE-2021-28165",
+        "CVE-2018-12538",
+        "CVE-2019-10246",
+        "CVE-2017-7657"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.92414
     },
     "curation": {
       "priority": "critical",
@@ -160,22 +210,22 @@
     "threat": {
       "associated_cves": [
         "CVE-2021-22060",
-        "CVE-2018-1257",
-        "CVE-2018-1272",
-        "CVE-2021-22096",
-        "CVE-2018-1271",
         "CVE-2025-41249",
-        "CVE-2015-5211",
-        "CVE-2009-1190",
         "CVE-2015-0201",
-        "CVE-2014-3578",
-        "CVE-2018-15756",
+        "CVE-2018-1271",
+        "CVE-2021-22096",
         "CVE-2016-5007",
         "CVE-2018-1199",
         "CVE-2011-2730",
         "CVE-2011-2894",
-        "CVE-2018-1258",
+        "CVE-2009-1190",
+        "CVE-2015-5211",
         "CVE-2024-22233",
+        "CVE-2014-3578",
+        "CVE-2018-15756",
+        "CVE-2018-1258",
+        "CVE-2018-1257",
+        "CVE-2018-1272",
         "CVE-2018-11040"
       ],
       "max_cvss": null,
@@ -207,68 +257,18 @@
     },
     "threat": {
       "associated_cves": [
-        "CVE-2022-1471",
         "CVE-2022-38752",
-        "CVE-2022-38750",
         "CVE-2022-41854",
+        "CVE-2022-38750",
         "CVE-2017-18640",
-        "CVE-2022-25857",
+        "CVE-2022-38749",
+        "CVE-2022-1471",
         "CVE-2022-38751",
-        "CVE-2022-38749"
+        "CVE-2022-25857"
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
       "max_epss": 0.93796
-    },
-    "curation": {
-      "priority": "critical",
-      "status": "pending",
-      "coverage_pct": 0.0
-    }
-  },
-  {
-    "name": "com.fasterxml.jackson.core:jackson-databind",
-    "ecosystem": "maven",
-    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind",
-    "default_version": null,
-    "github_repo": null,
-    "signals": {
-      "deps_dev_dependent_count": 0,
-      "github_stars": null,
-      "github_forks": null
-    },
-    "scores": {
-      "score_deps_dev": 0.0,
-      "score_github": 0.0,
-      "score_threat": 0.517068,
-      "composite_score": 0.103414
-    },
-    "threat": {
-      "associated_cves": [
-        "CVE-2018-14719",
-        "CVE-2019-16943",
-        "CVE-2020-35490",
-        "CVE-2020-14060",
-        "CVE-2020-14062",
-        "CVE-2020-36518",
-        "CVE-2020-35728",
-        "CVE-2020-36186",
-        "CVE-2018-12023",
-        "CVE-2017-7525",
-        "CVE-2018-5968",
-        "CVE-2022-42003",
-        "CVE-2019-14540",
-        "CVE-2020-35491",
-        "CVE-2020-36185",
-        "CVE-2020-36179",
-        "CVE-2020-10969",
-        "CVE-2019-12086",
-        "CVE-2018-19361",
-        "CVE-2020-8840"
-      ],
-      "max_cvss": null,
-      "in_cisa_kev": false,
-      "max_epss": 0.79267
     },
     "curation": {
       "priority": "critical",
@@ -290,30 +290,30 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.464992,
-      "composite_score": 0.092998
+      "score_threat": 0.476446,
+      "composite_score": 0.095289
     },
     "threat": {
       "associated_cves": [
         "CVE-2018-5382",
-        "CVE-2016-1000339",
+        "CVE-2018-1000180",
+        "CVE-2016-1000340",
         "CVE-2020-26939",
-        "CVE-2015-7940",
-        "CVE-2016-1000345",
-        "CVE-2024-29857",
-        "CVE-2016-1000344",
-        "CVE-2016-1000346",
+        "CVE-2016-1000342",
+        "CVE-2016-1000352",
+        "CVE-2020-15522",
+        "CVE-2017-13098",
+        "CVE-2024-30171",
+        "CVE-2023-33201",
         "CVE-2024-34447",
         "CVE-2018-1000613",
+        "CVE-2016-1000346",
+        "CVE-2016-1000339",
+        "CVE-2013-1624",
         "CVE-2023-33202",
-        "CVE-2016-1000340",
-        "CVE-2018-1000180",
+        "CVE-2024-29857",
         "CVE-2020-28052",
-        "CVE-2017-13098",
-        "CVE-2023-33201",
         "CVE-2016-1000343",
-        "CVE-2016-1000342",
-        "CVE-2016-1000338",
         "CVE-2016-1000341"
       ],
       "max_cvss": null,
@@ -345,9 +345,9 @@
     },
     "threat": {
       "associated_cves": [
-        "CVE-2015-3253",
+        "CVE-2016-6814",
         "CVE-2020-17521",
-        "CVE-2016-6814"
+        "CVE-2015-3253"
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
@@ -436,31 +436,70 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.2,
-      "composite_score": 0.04
+      "score_threat": 0.242329,
+      "composite_score": 0.048466
     },
     "threat": {
       "associated_cves": [
-        "CVE-2022-4492",
-        "CVE-2017-7559",
-        "CVE-2014-7816",
-        "CVE-2024-1459",
-        "CVE-2017-2670",
-        "CVE-2023-1973",
         "CVE-2017-12196",
-        "CVE-2020-1745",
-        "CVE-2021-3690",
-        "CVE-2021-3597",
+        "CVE-2024-5971",
+        "CVE-2018-1114",
+        "CVE-2020-10705",
+        "CVE-2017-2670",
+        "CVE-2021-20220",
         "CVE-2024-7885",
-        "CVE-2016-7046",
-        "CVE-2020-1757",
-        "CVE-2024-3653",
-        "CVE-2017-12165",
+        "CVE-2024-6162",
+        "CVE-2021-3597",
+        "CVE-2022-2053",
         "CVE-2021-3859",
-        "CVE-2025-9784",
-        "CVE-2023-1108",
+        "CVE-2022-4492",
+        "CVE-2020-1757",
         "CVE-2020-27782",
-        "CVE-2018-1114"
+        "CVE-2020-10719",
+        "CVE-2023-1973",
+        "CVE-2021-3690",
+        "CVE-2014-7816",
+        "CVE-2024-3653",
+        "CVE-2017-2666"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "org.postgresql:postgresql",
+    "ecosystem": "maven",
+    "purl": "pkg:maven/org.postgresql/postgresql",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.151261,
+      "composite_score": 0.030252
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2025-49146",
+        "CVE-2022-41946",
+        "CVE-2022-31197",
+        "CVE-2026-42198",
+        "CVE-2020-13692",
+        "CVE-2012-1618",
+        "CVE-2022-21724",
+        "CVE-2022-26520",
+        "CVE-2024-1597"
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
@@ -491,15 +530,15 @@
     },
     "threat": {
       "associated_cves": [
-        "CVE-2023-22102",
-        "CVE-2019-2692",
-        "CVE-2017-3523",
-        "CVE-2022-21363",
-        "CVE-2018-3258",
-        "CVE-2015-2575",
         "CVE-2017-3589",
+        "CVE-2018-3258",
+        "CVE-2017-3586",
+        "CVE-2023-22102",
+        "CVE-2015-2575",
         "CVE-2021-2471",
-        "CVE-2017-3586"
+        "CVE-2017-3523",
+        "CVE-2019-2692",
+        "CVE-2022-21363"
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
@@ -512,9 +551,9 @@
     }
   },
   {
-    "name": "org.postgresql:postgresql",
+    "name": "org.apache.kafka:kafka-clients",
     "ecosystem": "maven",
-    "purl": "pkg:maven/org.postgresql/postgresql",
+    "purl": "pkg:maven/org.apache.kafka/kafka-clients",
     "default_version": null,
     "github_repo": null,
     "signals": {
@@ -525,19 +564,18 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.14434,
-      "composite_score": 0.028868
+      "score_threat": 0.136602,
+      "composite_score": 0.02732
     },
     "threat": {
       "associated_cves": [
-        "CVE-2022-21724",
-        "CVE-2022-31197",
-        "CVE-2022-26520",
-        "CVE-2025-49146",
-        "CVE-2024-1597",
-        "CVE-2022-41946",
-        "CVE-2020-13692",
-        "CVE-2012-1618"
+        "CVE-2024-31141",
+        "CVE-2026-35554",
+        "CVE-2026-33557",
+        "CVE-2026-33558",
+        "CVE-2017-12610",
+        "CVE-2021-38153",
+        "CVE-2025-27817"
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
@@ -569,47 +607,11 @@
     "threat": {
       "associated_cves": [
         "CVE-2012-6153",
-        "CVE-2020-13956",
+        "CVE-2015-5262",
         "CVE-2011-1498",
         "CVE-2013-4366",
-        "CVE-2015-5262",
-        "CVE-2014-3577"
-      ],
-      "max_cvss": null,
-      "in_cisa_kev": false,
-      "max_epss": 0.0
-    },
-    "curation": {
-      "priority": "high",
-      "status": "pending",
-      "coverage_pct": 0.0
-    }
-  },
-  {
-    "name": "org.apache.kafka:kafka-clients",
-    "ecosystem": "maven",
-    "purl": "pkg:maven/org.apache.kafka/kafka-clients",
-    "default_version": null,
-    "github_repo": null,
-    "signals": {
-      "deps_dev_dependent_count": 0,
-      "github_stars": null,
-      "github_forks": null
-    },
-    "scores": {
-      "score_deps_dev": 0.0,
-      "score_github": 0.0,
-      "score_threat": 0.12783,
-      "composite_score": 0.025566
-    },
-    "threat": {
-      "associated_cves": [
-        "CVE-2021-38153",
-        "CVE-2024-31141",
-        "CVE-2026-33557",
-        "CVE-2025-27817",
-        "CVE-2026-35554",
-        "CVE-2017-12610"
+        "CVE-2014-3577",
+        "CVE-2020-13956"
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
@@ -640,12 +642,47 @@
     },
     "threat": {
       "associated_cves": [
-        "CVE-2025-53864",
-        "CVE-2019-17195",
-        "CVE-2017-12974",
-        "CVE-2017-12972",
         "CVE-2017-12973",
-        "CVE-2023-52428"
+        "CVE-2023-52428",
+        "CVE-2025-53864",
+        "CVE-2017-12974",
+        "CVE-2019-17195",
+        "CVE-2017-12972"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "org.springframework.boot:spring-boot",
+    "ecosystem": "maven",
+    "purl": "pkg:maven/org.springframework.boot/spring-boot",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.117704,
+      "composite_score": 0.023541
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2026-40973",
+        "CVE-2018-1196",
+        "CVE-2026-40976",
+        "CVE-2022-27772",
+        "CVE-2025-22235"
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
@@ -677,10 +714,10 @@
     "threat": {
       "associated_cves": [
         "CVE-2024-7254",
-        "CVE-2022-3509",
-        "CVE-2022-3171",
         "CVE-2022-3510",
-        "CVE-2021-22569"
+        "CVE-2022-3171",
+        "CVE-2021-22569",
+        "CVE-2022-3509"
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
@@ -688,39 +725,6 @@
     },
     "curation": {
       "priority": "high",
-      "status": "pending",
-      "coverage_pct": 0.0
-    }
-  },
-  {
-    "name": "org.springframework.boot:spring-boot",
-    "ecosystem": "maven",
-    "purl": "pkg:maven/org.springframework.boot/spring-boot",
-    "default_version": null,
-    "github_repo": null,
-    "signals": {
-      "deps_dev_dependent_count": 0,
-      "github_stars": null,
-      "github_forks": null
-    },
-    "scores": {
-      "score_deps_dev": 0.0,
-      "score_github": 0.0,
-      "score_threat": 0.091068,
-      "composite_score": 0.018214
-    },
-    "threat": {
-      "associated_cves": [
-        "CVE-2018-1196",
-        "CVE-2022-27772",
-        "CVE-2025-22235"
-      ],
-      "max_cvss": null,
-      "in_cisa_kev": false,
-      "max_epss": 0.0
-    },
-    "curation": {
-      "priority": "low",
       "status": "pending",
       "coverage_pct": 0.0
     }
@@ -744,9 +748,9 @@
     },
     "threat": {
       "associated_cves": [
+        "CVE-2020-8908",
         "CVE-2018-10237",
-        "CVE-2023-2976",
-        "CVE-2020-8908"
+        "CVE-2023-2976"
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
@@ -777,8 +781,8 @@
     },
     "threat": {
       "associated_cves": [
-        "CVE-2026-0603",
         "CVE-2020-25638",
+        "CVE-2026-0603",
         "CVE-2019-14900"
       ],
       "max_cvss": null,
@@ -856,6 +860,38 @@
     }
   },
   {
+    "name": "org.apache.httpcomponents.client5:httpclient5",
+    "ecosystem": "maven",
+    "purl": "pkg:maven/org.apache.httpcomponents.client5/httpclient5",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.07217,
+      "composite_score": 0.014434
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2025-27820",
+        "CVE-2026-40542"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "low",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
     "name": "io.netty:netty-all",
     "ecosystem": "maven",
     "purl": "pkg:maven/io.netty/netty-all",
@@ -874,8 +910,8 @@
     },
     "threat": {
       "associated_cves": [
-        "CVE-2019-16869",
-        "CVE-2014-0193"
+        "CVE-2014-0193",
+        "CVE-2019-16869"
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
@@ -939,37 +975,6 @@
     "threat": {
       "associated_cves": [
         "CVE-2025-48924"
-      ],
-      "max_cvss": null,
-      "in_cisa_kev": false,
-      "max_epss": 0.0
-    },
-    "curation": {
-      "priority": "low",
-      "status": "pending",
-      "coverage_pct": 0.0
-    }
-  },
-  {
-    "name": "org.apache.httpcomponents.client5:httpclient5",
-    "ecosystem": "maven",
-    "purl": "pkg:maven/org.apache.httpcomponents.client5/httpclient5",
-    "default_version": null,
-    "github_repo": null,
-    "signals": {
-      "deps_dev_dependent_count": 0,
-      "github_stars": null,
-      "github_forks": null
-    },
-    "scores": {
-      "score_deps_dev": 0.0,
-      "score_github": 0.0,
-      "score_threat": 0.045534,
-      "composite_score": 0.009107
-    },
-    "threat": {
-      "associated_cves": [
-        "CVE-2025-27820"
       ],
       "max_cvss": null,
       "in_cisa_kev": false,
