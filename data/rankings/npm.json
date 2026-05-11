@@ -172,8 +172,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.211454,
-      "composite_score": 0.042291
+      "score_threat": 0.2,
+      "composite_score": 0.04
     },
     "threat": {
       "associated_cves": [

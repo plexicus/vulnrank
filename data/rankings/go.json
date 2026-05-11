@@ -13,8 +13,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.994289,
-      "composite_score": 0.198858
+      "score_threat": 0.97778,
+      "composite_score": 0.195556
     },
     "threat": {
       "associated_cves": [
@@ -63,8 +63,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.580712,
-      "composite_score": 0.116142
+      "score_threat": 0.55102,
+      "composite_score": 0.110204
     },
     "threat": {
       "associated_cves": [
@@ -113,8 +113,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.264432,
-      "composite_score": 0.052886
+      "score_threat": 0.2,
+      "composite_score": 0.04
     },
     "threat": {
       "associated_cves": [

@@ -1,155 +1,5 @@
 [
   {
-    "name": "pillow",
-    "ecosystem": "pypi",
-    "purl": "pkg:pypi/pillow",
-    "default_version": null,
-    "github_repo": null,
-    "signals": {
-      "deps_dev_dependent_count": 0,
-      "github_stars": null,
-      "github_forks": null
-    },
-    "scores": {
-      "score_deps_dev": 0.0,
-      "score_github": 0.0,
-      "score_threat": 1.0,
-      "composite_score": 0.2
-    },
-    "threat": {
-      "associated_cves": [
-        "CVE-2021-28677",
-        "CVE-2020-5311",
-        "CVE-2014-3589",
-        "CVE-2022-24303",
-        "CVE-2021-25289",
-        "CVE-2020-35655",
-        "CVE-2021-23437",
-        "CVE-2016-9189",
-        "CVE-2016-2533",
-        "CVE-2016-3076",
-        "CVE-2020-35653",
-        "CVE-2021-25292",
-        "CVE-2026-42308",
-        "CVE-2021-25293",
-        "CVE-2022-45199",
-        "CVE-2019-19911",
-        "CVE-2021-27921",
-        "CVE-2024-28219",
-        "CVE-2020-5312",
-        "CVE-2025-48379"
-      ],
-      "max_cvss": null,
-      "in_cisa_kev": true,
-      "max_epss": 0.94083
-    },
-    "curation": {
-      "priority": "critical",
-      "status": "pending",
-      "coverage_pct": 0.0
-    }
-  },
-  {
-    "name": "django",
-    "ecosystem": "pypi",
-    "purl": "pkg:pypi/django",
-    "default_version": null,
-    "github_repo": null,
-    "signals": {
-      "deps_dev_dependent_count": 0,
-      "github_stars": null,
-      "github_forks": null
-    },
-    "scores": {
-      "score_deps_dev": 0.0,
-      "score_github": 0.0,
-      "score_threat": 0.701794,
-      "composite_score": 0.140359
-    },
-    "threat": {
-      "associated_cves": [
-        "CVE-2014-0473",
-        "CVE-2025-48432",
-        "CVE-2013-0305",
-        "CVE-2021-45452",
-        "CVE-2022-23833",
-        "CVE-2025-13372",
-        "CVE-2024-41989",
-        "CVE-2017-7234",
-        "CVE-2019-12781",
-        "CVE-2011-0696",
-        "CVE-2010-4535",
-        "CVE-2020-13254",
-        "CVE-2016-9014",
-        "CVE-2008-3909",
-        "CVE-2019-12308",
-        "CVE-2021-45115",
-        "CVE-2021-45116",
-        "CVE-2015-5144",
-        "CVE-2026-1312",
-        "CVE-2025-26699"
-      ],
-      "max_cvss": null,
-      "in_cisa_kev": false,
-      "max_epss": 0.92834
-    },
-    "curation": {
-      "priority": "critical",
-      "status": "pending",
-      "coverage_pct": 0.0
-    }
-  },
-  {
-    "name": "aiohttp",
-    "ecosystem": "pypi",
-    "purl": "pkg:pypi/aiohttp",
-    "default_version": null,
-    "github_repo": null,
-    "signals": {
-      "deps_dev_dependent_count": 0,
-      "github_stars": null,
-      "github_forks": null
-    },
-    "scores": {
-      "score_deps_dev": 0.0,
-      "score_github": 0.0,
-      "score_threat": 0.60362,
-      "composite_score": 0.120724
-    },
-    "threat": {
-      "associated_cves": [
-        "CVE-2026-34516",
-        "CVE-2026-34519",
-        "CVE-2025-53643",
-        "CVE-2026-34525",
-        "CVE-2025-69227",
-        "CVE-2025-69230",
-        "CVE-2025-69225",
-        "CVE-2025-69229",
-        "CVE-2024-52304",
-        "CVE-2025-69224",
-        "CVE-2023-47641",
-        "CVE-2024-42367",
-        "CVE-2026-34517",
-        "CVE-2026-34513",
-        "CVE-2026-34520",
-        "CVE-2026-34515",
-        "CVE-2023-49082",
-        "CVE-2021-21330",
-        "CVE-2024-30251",
-        "CVE-2023-49081"
-      ],
-      "max_cvss": null,
-      "in_cisa_kev": false,
-      "max_epss": 0.93482
-    },
-    "curation": {
-      "priority": "critical",
-      "status": "pending",
-      "coverage_pct": 0.0
-    }
-  },
-  {
     "name": "werkzeug",
     "ecosystem": "pypi",
     "purl": "pkg:pypi/werkzeug",
@@ -327,6 +177,156 @@
     }
   },
   {
+    "name": "pillow",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/pillow",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.2,
+      "composite_score": 0.04
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2021-28677",
+        "CVE-2020-5311",
+        "CVE-2014-3589",
+        "CVE-2022-24303",
+        "CVE-2021-25289",
+        "CVE-2020-35655",
+        "CVE-2021-23437",
+        "CVE-2016-9189",
+        "CVE-2016-2533",
+        "CVE-2016-3076",
+        "CVE-2020-35653",
+        "CVE-2021-25292",
+        "CVE-2026-42308",
+        "CVE-2021-25293",
+        "CVE-2022-45199",
+        "CVE-2019-19911",
+        "CVE-2021-27921",
+        "CVE-2024-28219",
+        "CVE-2020-5312",
+        "CVE-2025-48379"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "django",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/django",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.2,
+      "composite_score": 0.04
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2014-0473",
+        "CVE-2025-48432",
+        "CVE-2013-0305",
+        "CVE-2021-45452",
+        "CVE-2022-23833",
+        "CVE-2025-13372",
+        "CVE-2024-41989",
+        "CVE-2017-7234",
+        "CVE-2019-12781",
+        "CVE-2011-0696",
+        "CVE-2010-4535",
+        "CVE-2020-13254",
+        "CVE-2016-9014",
+        "CVE-2008-3909",
+        "CVE-2019-12308",
+        "CVE-2021-45115",
+        "CVE-2021-45116",
+        "CVE-2015-5144",
+        "CVE-2026-1312",
+        "CVE-2025-26699"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
+    "name": "aiohttp",
+    "ecosystem": "pypi",
+    "purl": "pkg:pypi/aiohttp",
+    "default_version": null,
+    "github_repo": null,
+    "signals": {
+      "deps_dev_dependent_count": 0,
+      "github_stars": null,
+      "github_forks": null
+    },
+    "scores": {
+      "score_deps_dev": 0.0,
+      "score_github": 0.0,
+      "score_threat": 0.2,
+      "composite_score": 0.04
+    },
+    "threat": {
+      "associated_cves": [
+        "CVE-2026-34516",
+        "CVE-2026-34519",
+        "CVE-2025-53643",
+        "CVE-2026-34525",
+        "CVE-2025-69227",
+        "CVE-2025-69230",
+        "CVE-2025-69225",
+        "CVE-2025-69229",
+        "CVE-2024-52304",
+        "CVE-2025-69224",
+        "CVE-2023-47641",
+        "CVE-2024-42367",
+        "CVE-2026-34517",
+        "CVE-2026-34513",
+        "CVE-2026-34520",
+        "CVE-2026-34515",
+        "CVE-2023-49082",
+        "CVE-2021-21330",
+        "CVE-2024-30251",
+        "CVE-2023-49081"
+      ],
+      "max_cvss": null,
+      "in_cisa_kev": false,
+      "max_epss": 0.0
+    },
+    "curation": {
+      "priority": "high",
+      "status": "pending",
+      "coverage_pct": 0.0
+    }
+  },
+  {
     "name": "tensorflow",
     "ecosystem": "pypi",
     "purl": "pkg:pypi/tensorflow",
@@ -340,8 +340,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.398034,
-      "composite_score": 0.079607
+      "score_threat": 0.2,
+      "composite_score": 0.04
     },
     "threat": {
       "associated_cves": [
@@ -390,8 +390,8 @@
     "scores": {
       "score_deps_dev": 0.0,
       "score_github": 0.0,
-      "score_threat": 0.225585,
-      "composite_score": 0.045117
+      "score_threat": 0.2,
+      "composite_score": 0.04
     },
     "threat": {
       "associated_cves": [
