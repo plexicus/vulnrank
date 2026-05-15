@@ -1,5 +1,12 @@
 [
   {
+    "cve_id": "CVE-2026-20182",
+    "vendor": "Cisco",
+    "product": "Catalyst SD-WAN",
+    "date_added": "2026-05-14",
+    "known_ransomware": false
+  },
+  {
     "cve_id": "CVE-2026-42208",
     "vendor": "BerriAI",
     "product": "LiteLLM",
@@ -39,7 +46,7 @@
     "vendor": "ConnectWise",
     "product": "ScreenConnect",
     "date_added": "2026-04-28",
-    "known_ransomware": false
+    "known_ransomware": true
   },
   {
     "cve_id": "CVE-2026-32202",
@@ -67,14 +74,14 @@
     "vendor": "SimpleHelp ",
     "product": "SimpleHelp",
     "date_added": "2026-04-24",
-    "known_ransomware": false
+    "known_ransomware": true
   },
   {
     "cve_id": "CVE-2024-57726",
     "vendor": "SimpleHelp ",
     "product": "SimpleHelp",
     "date_added": "2026-04-24",
-    "known_ransomware": false
+    "known_ransomware": true
   },
   {
     "cve_id": "CVE-2026-39987",
